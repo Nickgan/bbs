@@ -8,6 +8,8 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Table;
 import java.util.Date;
 
@@ -26,8 +28,10 @@ public class User extends BaseEntity {
     private String userName;    //用户名
     private String nickName;    //昵称
     private String email;       //邮箱
-    private Date birthDay;      //生日
+
+    @Enumerated(EnumType.STRING)
     private Gender gender;      //性别
+
     private UserStatus status;  //用户状态ß
     private Date registerDate;  //注册时间
     private String ip;          //本次登陆ip
