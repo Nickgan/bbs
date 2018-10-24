@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bbs.iml" filepath="$PROJECT_DIR$/bbs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-admin/bbs-admin.iml" filepath="$PROJECT_DIR$/bbs-admin/bbs-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-common/bbs-common.iml" filepath="$PROJECT_DIR$/bbs-common/bbs-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-domain/bbs-domain.iml" filepath="$PROJECT_DIR$/bbs-domain/bbs-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-forum/bbs-forum.iml" filepath="$PROJECT_DIR$/bbs-forum/bbs-forum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-notice/bbs-notice.iml" filepath="$PROJECT_DIR$/bbs-notice/bbs-notice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-post/bbs-post.iml" filepath="$PROJECT_DIR$/bbs-post/bbs-post.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-reply/bbs-reply.iml" filepath="$PROJECT_DIR$/bbs-reply/bbs-reply.iml" />
+    </modules>
+  </component>
+</project>
