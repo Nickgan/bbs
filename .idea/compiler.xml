@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bbs-admin" />
+        <module name="bbs-admin-dao" />
+        <module name="bbs-admin-service" />
+        <module name="bbs-admin-web" />
         <module name="bbs-common" />
         <module name="bbs-domain" />
         <module name="bbs-forum" />
@@ -18,6 +20,9 @@
     <bytecodeTargetLevel>
       <module name="bbs" target="1.8" />
       <module name="bbs-admin" target="1.8" />
+      <module name="bbs-admin-dao" target="1.8" />
+      <module name="bbs-admin-service" target="1.8" />
+      <module name="bbs-admin-web" target="1.8" />
       <module name="bbs-common" target="1.8" />
       <module name="bbs-domain" target="1.8" />
       <module name="bbs-forum" target="1.8" />

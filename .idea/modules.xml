@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bbs.iml" filepath="$PROJECT_DIR$/bbs.iml" />
       <module fileurl="file://$PROJECT_DIR$/bbs-admin/bbs-admin.iml" filepath="$PROJECT_DIR$/bbs-admin/bbs-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-admin/bbs-admin-dao/bbs-admin-dao.iml" filepath="$PROJECT_DIR$/bbs-admin/bbs-admin-dao/bbs-admin-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/bbs-admin-service.iml" filepath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/bbs-admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-admin/bbs-admin-web/bbs-admin-web.iml" filepath="$PROJECT_DIR$/bbs-admin/bbs-admin-web/bbs-admin-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/bbs-common/bbs-common.iml" filepath="$PROJECT_DIR$/bbs-common/bbs-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/bbs-domain/bbs-domain.iml" filepath="$PROJECT_DIR$/bbs-domain/bbs-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/bbs-forum/bbs-forum.iml" filepath="$PROJECT_DIR$/bbs-forum/bbs-forum.iml" />
