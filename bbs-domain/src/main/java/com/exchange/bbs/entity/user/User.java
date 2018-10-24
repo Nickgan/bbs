@@ -5,12 +5,14 @@ import com.exchange.bbs.enums.Gender;
 import com.exchange.bbs.enums.UserStatus;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -23,7 +25,8 @@ import java.util.Date;
 @Table(name = "bbs_user")
 @Data
 @Accessors(chain = true)
-public class User extends BaseEntity {
+@NoArgsConstructor
+public class User extends BaseEntity implements Serializable {
 
     private String userName;    //用户名
     private String nickName;    //昵称
