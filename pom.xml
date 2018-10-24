@@ -29,6 +29,7 @@
         <module>bbs-forum</module>
         <module>bbs-post</module>
         <module>bbs-reply</module>
+        <module>bbs-user</module>
     </modules>
 
     <dependencyManagement>

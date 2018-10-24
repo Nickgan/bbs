@@ -12,5 +12,6 @@
     <file url="file://$PROJECT_DIR$/bbs-notice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-post" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-reply" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bbs-user" charset="UTF-8" />
   </component>
 </project>
