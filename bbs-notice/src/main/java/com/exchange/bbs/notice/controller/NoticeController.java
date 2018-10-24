@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * 系统公告
+ *
  * @author gan
  * @date 2018/10/24 下午3:44
  */

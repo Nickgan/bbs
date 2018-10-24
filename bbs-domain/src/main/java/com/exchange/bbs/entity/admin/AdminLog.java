@@ -1,4 +1,7 @@
-package com.exchange.bbs.entity;
+package com.exchange.bbs.entity.admin;
+
+import com.exchange.bbs.entity.BaseEntity;
+import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -11,6 +14,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "admin_log")
+@Data
 public class AdminLog extends BaseEntity {
 
     private String content;

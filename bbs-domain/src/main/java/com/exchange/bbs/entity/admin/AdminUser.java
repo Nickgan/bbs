@@ -1,4 +1,10 @@
-package com.exchange.bbs.entity;
+package com.exchange.bbs.entity.admin;
+
+import com.exchange.bbs.entity.BaseEntity;
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * 后台管理员用户
@@ -6,6 +12,10 @@ package com.exchange.bbs.entity;
  * @author gan
  * @date 2018/10/24 上午10:54
  */
+
+@Entity
+@Table(name = "admin_user")
+@Data
 public class AdminUser extends BaseEntity {
 
     private String userName;    //用户名
@@ -13,6 +23,5 @@ public class AdminUser extends BaseEntity {
     private String nickName;    //昵称
     private String ip;          //本次登陆ip
     private String lastIp;      //上次登陆ip
-
 
 }
