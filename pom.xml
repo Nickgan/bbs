@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- 采用继承的方式引入spring boot -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -19,6 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <spring.boot.version>2.0.0.RELEASE</spring.boot.version>
     </properties>
 
     <modules>
@@ -34,15 +36,23 @@
     </modules>
 
     <dependencyManagement>
-        <!--<dependencies>-->
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Dalston.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- 采用依赖的方式引入spring boot 这里type必须为pom,scope必须为import(这样的方式解决了maven只能单继承带来的不足)-->
             <!--<dependency>-->
-                <!--<groupId>org.springframework.cloud</groupId>-->
-                <!--<artifactId>spring-cloud-dependencies</artifactId>-->
-                <!--<version>${spring-cloud-versioin}</version>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-dependencies</artifactId>-->
+                <!--<version>${spring.boot.version}</version>-->
                 <!--<type>pom</type>-->
                 <!--<scope>import</scope>-->
             <!--</dependency>-->
-        <!--</dependencies>-->
+        </dependencies>
     </dependencyManagement>
 
 

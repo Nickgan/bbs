@@ -3,11 +3,23 @@
 
 
 spring:
+  application:
+    name: bbs-admin-web     #服务名字
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/bbs-admin?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
     username: root
     password: root
+    type: com.zaxxer.hikari.HikariDataSource  #当前数据源操作类型
+    hikari:   #hikari连接池配置
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 3000
+      pool-name: DatebookHikariCp
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
   jpa:
     hibernate:
       ddl-auto: update

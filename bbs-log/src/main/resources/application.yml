@@ -3,6 +3,8 @@
 
 
 spring:
+  application:
+    name: bbs-log
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/bbs-log?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
