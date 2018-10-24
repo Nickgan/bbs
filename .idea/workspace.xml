@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1fc98e3-344e-4dc6-a190-96a451c73f99" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/controller/ForumController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-forum/src/main/resources/application.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/ReplyApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/controller/ReplyController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/repository/ReplyRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/service/ReplyService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/service/impl/ReplyServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-reply/src/main/resources/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/repository/ForumRepository.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/service/ForumService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/service/impl/ForumServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-admin/src/main/java/com/exchange/bbs/admin/AdminApplication.java" afterPath="$PROJECT_DIR$/bbs-admin/src/main/java/com/exchange/bbs/admin/AdminApplication.java" />
-      <change beforePath="$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/Reply.java" afterPath="$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/reply/Reply.java" />
-      <change beforePath="$PROJECT_DIR$/bbs-forum/bbs-forum.iml" afterPath="$PROJECT_DIR$/bbs-forum/bbs-forum.iml" />
-      <change beforePath="$PROJECT_DIR$/bbs-forum/pom.xml" afterPath="$PROJECT_DIR$/bbs-forum/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-notice/src/main/java/com/exchange/bbs/notice/NoticeApplication.java" afterPath="$PROJECT_DIR$/bbs-notice/src/main/java/com/exchange/bbs/notice/NoticeApplication.java" />
-      <change beforePath="$PROJECT_DIR$/bbs-reply/bbs-reply.iml" afterPath="$PROJECT_DIR$/bbs-reply/bbs-reply.iml" />
-      <change beforePath="$PROJECT_DIR$/bbs-reply/pom.xml" afterPath="$PROJECT_DIR$/bbs-reply/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/bbs-admin/bbs-admin.iml" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin.iml" />
+      <change beforePath="$PROJECT_DIR$/bbs-common/bbs-common.iml" afterPath="$PROJECT_DIR$/bbs-common/bbs-common.iml" />
+      <change beforePath="$PROJECT_DIR$/bbs-domain/bbs-domain.iml" afterPath="$PROJECT_DIR$/bbs-domain/bbs-domain.iml" />
+      <change beforePath="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/controller/ForumController.java" afterPath="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/controller/ForumController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,40 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReplyService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/service/ReplyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReplyServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/service/impl/ReplyServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReplyRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/repository/ReplyRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ReplyController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/controller/ReplyController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,6 +36,19 @@
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbs-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -105,39 +76,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForumController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ForumController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/controller/ForumController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bbs-forum/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-reply/pom.xml">
+        <entry file="file://$PROJECT_DIR$/bbs-forum/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForumRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/repository/ForumRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForumService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/service/ForumService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForumServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/service/impl/ForumServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -177,7 +169,6 @@
         <option value="$PROJECT_DIR$/bbs-notice/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/bbs-domain/pom.xml" />
-        <option value="$PROJECT_DIR$/bbs-common/pom.xml" />
         <option value="$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/notice/Notice.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/AdminLog.java" />
@@ -206,7 +197,12 @@
         <option value="$PROJECT_DIR$/bbs-reply/pom.xml" />
         <option value="$PROJECT_DIR$/bbs-reply/src/main/java/com/exchange/bbs/reply/controller/ReplyController.java" />
         <option value="$PROJECT_DIR$/bbs-forum/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/bbs-common/pom.xml" />
         <option value="$PROJECT_DIR$/bbs-forum/pom.xml" />
+        <option value="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/repository/ForumRepository.java" />
+        <option value="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/service/ForumService.java" />
+        <option value="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/service/impl/ForumServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/controller/ForumController.java" />
       </list>
     </option>
   </component>
@@ -276,6 +272,11 @@
             <path>
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="bbs-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
@@ -357,6 +358,33 @@
               <item name="bbs" type="462c0819:PsiDirectoryNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="exchange" type="462c0819:PsiDirectoryNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
@@ -648,7 +676,7 @@
       <workItem from="1540366532213" duration="343000" />
       <workItem from="1540366869337" duration="1707000" />
       <workItem from="1540368626347" duration="2098000" />
-      <workItem from="1540371017906" duration="6560000" />
+      <workItem from="1540371017906" duration="6911000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1540367344291</created>
@@ -678,11 +706,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540377063577</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="继续完善项目的创建">
+      <created>1540379678126</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540379678126</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10708000" />
+    <option name="totallyTimeSpent" value="11059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="824" extended-state="0" />
@@ -775,29 +810,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/enums/Gender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/BbsLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/reply/Reply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/admin/AdminLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -905,17 +917,6 @@
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bbs-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bbs-domain/pom.xml">
@@ -1157,7 +1158,7 @@
         <state relative-caret-position="108">
           <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1219,23 +1220,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/controller/ForumController.java">
+    <entry file="file://$PROJECT_DIR$/bbs-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bbs-forum/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="223">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-forum/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/repository/ForumRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/service/ForumService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/service/impl/ForumServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-forum/src/main/java/com/exchange/bbs/forum/controller/ForumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
