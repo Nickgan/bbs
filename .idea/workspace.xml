@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1fc98e3-344e-4dc6-a190-96a451c73f99" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sql/database_init.sql" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-admin/bbs-admin-web/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-web/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/bbs-common/pom.xml" afterPath="$PROJECT_DIR$/bbs-common/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-forum/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/bbs-forum/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/bbs-log/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/bbs-log/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/bbs-notice/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/bbs-notice/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/bbs-post/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/bbs-post/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/bbs-reply/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/bbs-reply/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/bbs-user/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/bbs-user/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,6 +26,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -64,32 +71,6 @@
               <folding>
                 <element signature="e#427#428#0" expanded="true" />
                 <element signature="e#494#495#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-226">
-              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-user/src/main/java/com/exchange/bbs/user/UserApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,11 +116,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bbs-user/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="324">
+              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database_init.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql/database_init.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-80">
+              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -168,8 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminRoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminResourceService.java" />
         <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminResourceServiceImpl.java" />
         <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-web/src/main/java/com/exchange/bbs/admin/AdminUserController.java" />
         <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-web/src/main/java/com/exchange/bbs/admin/controller/AdminUserController.java" />
@@ -219,6 +208,8 @@
         <option value="$PROJECT_DIR$/bbs-post/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/bbs-reply/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/bbs-user/src/main/resources/application.yml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/37025cc1-84d4-44ae-b9cc-81ac127cbc84/console.sql" />
+        <option value="$PROJECT_DIR$/sql/database_init.sql" />
       </list>
     </option>
   </component>
@@ -293,308 +284,6 @@
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exchange" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exchange" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exchange" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exchange" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exchange" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="exchange" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="forum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-log" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-log" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-log" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-notice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-notice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-notice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-notice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-post" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-post" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-post" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-post" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-reply" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-reply" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-reply" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-reply" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-reply" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -611,6 +300,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -849,7 +539,7 @@
       <workItem from="1540366532213" duration="343000" />
       <workItem from="1540366869337" duration="1707000" />
       <workItem from="1540368626347" duration="2098000" />
-      <workItem from="1540371017906" duration="17335000" />
+      <workItem from="1540371017906" duration="18093000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1540367344291</created>
@@ -956,11 +646,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540392030708</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="添加服务名字和连接池配置">
+      <created>1540394106608</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1540394106608</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21483000" />
+    <option name="totallyTimeSpent" value="22241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="828" extended-state="6" />
@@ -972,7 +669,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25178826" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -987,7 +684,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2453505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26323318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1015,7 +713,8 @@
     <MESSAGE value="继续完善项目的创建333333" />
     <MESSAGE value="继续完善项目的创建44444" />
     <MESSAGE value="修改各个模块的默认端口" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改各个模块的默认端口" />
+    <MESSAGE value="添加服务名字和连接池配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加服务名字和连接池配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,25 +723,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bbs-post/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bbs-post/src/main/java/com/exchange/bbs/post/service/PostService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bbs-post/src/main/java/com/exchange/bbs/post/service/impl/PostServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1480,8 +1160,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bbs-user/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="324">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/37025cc1-84d4-44ae-b9cc-81ac127cbc84/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/database_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
           <folding />
         </state>
       </provider>
