@@ -12,6 +12,7 @@
         <module name="bbs-common" />
         <module name="bbs-domain" />
         <module name="bbs-forum" />
+        <module name="bbs-log" />
         <module name="bbs-notice" />
         <module name="bbs-post" />
         <module name="bbs-reply" />
@@ -27,6 +28,7 @@
       <module name="bbs-common" target="1.8" />
       <module name="bbs-domain" target="1.8" />
       <module name="bbs-forum" target="1.8" />
+      <module name="bbs-log" target="1.8" />
       <module name="bbs-notice" target="1.8" />
       <module name="bbs-post" target="1.8" />
       <module name="bbs-reply" target="1.8" />

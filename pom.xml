@@ -30,6 +30,7 @@
         <module>bbs-post</module>
         <module>bbs-reply</module>
         <module>bbs-user</module>
+        <module>bbs-log</module>
     </modules>
 
     <dependencyManagement>
