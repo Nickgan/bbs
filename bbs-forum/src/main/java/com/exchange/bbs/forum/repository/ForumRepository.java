@@ -1,6 +1,6 @@
 package com.exchange.bbs.forum.repository;
 
-import com.exchange.bbs.entity.Forum;
+import com.exchange.bbs.entity.forum.Forum;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
