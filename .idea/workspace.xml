@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1fc98e3-344e-4dc6-a190-96a451c73f99" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-dao/bbs-admin-dao.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-dao/src/main/java/com/exchange/bbs/admin/repository/AdminResourceRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-dao/src/main/java/com/exchange/bbs/admin/repository/AdminRoleRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-dao/src/main/java/com/exchange/bbs/admin/repository/AdminUserRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/bbs-admin-service.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminUserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminUserServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-web/bbs-admin-web.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-web/src/main/resources/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminResourceService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminRoleService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminResourceServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminRoleServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-admin/bbs-admin-dao/pom.xml" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-dao/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/pom.xml" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin-service/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-admin/bbs-admin.iml" afterPath="$PROJECT_DIR$/bbs-admin/bbs-admin.iml" />
-      <change beforePath="$PROJECT_DIR$/bbs-admin/pom.xml" afterPath="$PROJECT_DIR$/bbs-admin/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-common/bbs-common.iml" afterPath="$PROJECT_DIR$/bbs-common/bbs-common.iml" />
-      <change beforePath="$PROJECT_DIR$/bbs-common/pom.xml" afterPath="$PROJECT_DIR$/bbs-common/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-domain/bbs-domain.iml" afterPath="$PROJECT_DIR$/bbs-domain/bbs-domain.iml" />
-      <change beforePath="$PROJECT_DIR$/bbs-forum/bbs-forum.iml" afterPath="$PROJECT_DIR$/bbs-forum/bbs-forum.iml" />
-      <change beforePath="$PROJECT_DIR$/bbs-forum/pom.xml" afterPath="$PROJECT_DIR$/bbs-forum/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-notice/bbs-notice.iml" afterPath="$PROJECT_DIR$/bbs-notice/bbs-notice.iml" />
-      <change beforePath="$PROJECT_DIR$/bbs-notice/pom.xml" afterPath="$PROJECT_DIR$/bbs-notice/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-reply/bbs-reply.iml" afterPath="$PROJECT_DIR$/bbs-reply/bbs-reply.iml" />
-      <change beforePath="$PROJECT_DIR$/bbs-reply/pom.xml" afterPath="$PROJECT_DIR$/bbs-reply/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,40 +68,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-post/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-reply/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminUserServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminUserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminUserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminRoleService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminRoleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminRoleServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminRoleServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminResourceService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminResourceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminResourceServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminResourceServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,36 +148,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-domain/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-web/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -240,6 +215,10 @@
         <option value="$PROJECT_DIR$/bbs-admin/pom.xml" />
         <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/pom.xml" />
         <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminRole.java" />
+        <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminRoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminResourceService.java" />
+        <option value="$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminResourceServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -314,12 +293,6 @@
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbs" type="462c0819:PsiDirectoryNode" />
               <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbs" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="bbs-admin-dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
@@ -791,7 +764,7 @@
       <workItem from="1540366532213" duration="343000" />
       <workItem from="1540366869337" duration="1707000" />
       <workItem from="1540368626347" duration="2098000" />
-      <workItem from="1540371017906" duration="7808000" />
+      <workItem from="1540371017906" duration="8022000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1540367344291</created>
@@ -842,11 +815,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540380248507</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="继续完善项目的创建">
+      <created>1540380928859</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540380928859</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11956000" />
+    <option name="totallyTimeSpent" value="12170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="824" extended-state="0" />
@@ -855,7 +835,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39945653" sideWeight="0.5028653" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Redis Servers" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25178826" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25178826" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -869,7 +849,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -939,37 +919,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/enums/Gender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/BbsLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bbs-domain/src/main/java/com/exchange/bbs/entity/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bbs-notice/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1409,11 +1358,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminUserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/AdminResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service/src/main/java/com/exchange/bbs/admin/service/impl/AdminResourceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
