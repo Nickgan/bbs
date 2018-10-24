@@ -13,4 +13,12 @@
     <artifactId>bbs-admin-web</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>com.exchange</groupId>
+            <artifactId>bbs-admin-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 </project>
