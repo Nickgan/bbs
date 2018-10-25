@@ -34,6 +34,7 @@
         <module>bbs-user</module>
         <module>bbs-log</module>
         <module>bbs-eureka-server</module>
+        <module>bbs-web</module>
     </modules>
 
     <dependencyManagement>
