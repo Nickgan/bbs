@@ -11,6 +11,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
@@ -40,6 +41,7 @@ public class ParamsValidateAop {
      * 使用Hibernate的注解来进行验证
      */
     @Autowired
+    @Qualifier("localValidatorFactoryBean")
     private ValidatorFactory validatorFactory;
 
     @Pointcut("execution(public * com.exchange.bbs.*.controller.*.*(..))")
