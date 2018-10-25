@@ -3,6 +3,7 @@ package com.exchange.bbs.forum;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 版块和版块分类
@@ -12,6 +13,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
  */
 @SpringBootApplication
 @EntityScan("com.exchange.bbs.entity.forum")
+@EnableDiscoveryClient
 public class ForumApplication {
 
     public static void main(String[] args) {
