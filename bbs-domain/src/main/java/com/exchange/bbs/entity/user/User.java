@@ -33,10 +33,18 @@ public class User extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     private Gender gender;      //性别
-
-    private UserStatus status;  //用户状态ß
+    private Date birthday;      //生日
+    private UserStatus status;  //用户状态
     private Date registerDate;  //注册时间
     private String ip;          //本次登陆ip
     private String lastIp;      //上次登陆ip
+
+    private String headPhoto;   //头像
+    private String job;         //工作职业
+    private String hobby;       //爱好
+    private String qq;          //QQ号
+    private Long postCount;     //帖子数
+    private String signature;   //签名
+
 
 }
