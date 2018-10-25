@@ -24,6 +24,12 @@ public class ForumCategoryController extends BaseController {
     @Autowired
     ForumCategoryService forumCategoryService;
 
+    /**
+     * 新增版块分类
+     *
+     * @param req
+     * @return
+     */
     @PostMapping
     public BaseResult add(@ParamValidate AddForumCategoryReq req) {
         forumCategoryService.add(req);

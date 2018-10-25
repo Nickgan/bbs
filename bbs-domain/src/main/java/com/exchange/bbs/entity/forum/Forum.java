@@ -26,8 +26,8 @@ public class Forum extends BaseEntity {
     private String name;        //版块名称
     private String description; //版块描述
     private String author;      //版主
-    private Long postCount;     //帖子数
-    private Long replyCount;    //回帖数
+    private long postCount;     //帖子数
+    private long replyCount;    //回帖数
 
     @ManyToOne
     @JoinColumn(name = "category_id")
