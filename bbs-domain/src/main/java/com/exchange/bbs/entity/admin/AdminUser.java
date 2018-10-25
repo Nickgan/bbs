@@ -18,7 +18,7 @@ import javax.persistence.Table;
 @Data
 public class AdminUser extends BaseEntity {
 
-    private String userName;    //用户名
+    private String username;    //用户名
     private String password;    //密码
     private String nickName;    //昵称
     private String ip;          //本次登陆ip

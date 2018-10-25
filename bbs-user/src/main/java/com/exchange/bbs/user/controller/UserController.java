@@ -23,7 +23,7 @@ public class UserController extends BaseController {
     private UserService userService;
 
     @GetMapping(value = "/{id}")
-    public Object get(@PathVariable(name = "id") String id) {
+    public User get(@PathVariable(name = "id") String id) {
         User user = userService.get(id);
         return user;
     }

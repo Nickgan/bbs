@@ -27,7 +27,8 @@ import java.util.Date;
 //@JsonIgnoreProperties(value = {"hibernateLazyInitializer", "handler"})
 public class User extends BaseEntity {
 
-    private String userName;    //用户名
+    private String username;    //用户名
+    private String password;
     private String nickName;    //昵称
     private String email;       //邮箱
 

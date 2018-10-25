@@ -27,7 +27,7 @@ public class BbsLog extends BaseEntity {
     private String operation;   //操作
     private String description; //描述
     private String userId;      //用户id
-    private String userName;    //用户名字
+    private String username;    //用户名字
 
     @Enumerated(EnumType.STRING)
     private BbsLogType bbsLogType = BbsLogType.business;  //日志类型
