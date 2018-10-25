@@ -3,16 +3,14 @@ package com.exchange.bbs.entity.user;
 import com.exchange.bbs.entity.BaseEntity;
 import com.exchange.bbs.enums.Gender;
 import com.exchange.bbs.enums.UserStatus;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
+import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Table;
-import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -24,9 +22,10 @@ import java.util.Date;
 @Entity
 @Table(name = "bbs_user")
 @Data
-@Accessors(chain = true)
 @NoArgsConstructor
-public class User extends BaseEntity implements Serializable {
+@ToString(callSuper = true)
+//@JsonIgnoreProperties(value = {"hibernateLazyInitializer", "handler"})
+public class User extends BaseEntity {
 
     private String userName;    //用户名
     private String nickName;    //昵称

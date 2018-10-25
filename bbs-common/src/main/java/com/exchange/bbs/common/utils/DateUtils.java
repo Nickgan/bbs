@@ -1,4 +1,4 @@
-package com.exchange.common.utils;
+package com.exchange.bbs.common.utils;
 
 /**
  * 时间工具类

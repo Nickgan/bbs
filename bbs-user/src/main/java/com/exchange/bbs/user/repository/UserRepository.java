@@ -2,6 +2,7 @@ package com.exchange.bbs.user.repository;
 
 import com.exchange.bbs.entity.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 /**
  * bbs用户
@@ -11,5 +12,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface UserRepository extends JpaRepository<User, String> {
 
+    @Query("SELECT o FROM User o WHERE o.id = ?1 ")
+    User getById(String id);
 
 }

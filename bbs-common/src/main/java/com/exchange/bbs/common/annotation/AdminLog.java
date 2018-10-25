@@ -1,16 +1,16 @@
-package com.exchange.common.annotation;
+package com.exchange.bbs.common.annotation;
 
 import java.lang.annotation.*;
 
 /**
- * bbs系统用户关键日志记录
+ * 后台管理系统日志注解
  *
  * @author gan
- * @date 2018/10/24 下午1:41
+ * @date 2018/10/24 下午1:40
  */
 @Target(value = {ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface BbsLog {
+public @interface AdminLog {
 
 }

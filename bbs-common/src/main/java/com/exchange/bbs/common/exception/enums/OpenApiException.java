@@ -1,4 +1,6 @@
-package com.exchange.common.exception.enums;
+package com.exchange.bbs.common.exception.enums;
+
+import lombok.Getter;
 
 /**
  * 系统异常枚举
@@ -6,6 +8,8 @@ package com.exchange.common.exception.enums;
  * @author gan
  * @date 2018/10/24 下午12:49
  */
+
+@Getter
 public enum OpenApiException {
 
 
@@ -15,9 +19,7 @@ public enum OpenApiException {
      * ================================
      */
 
-    SYSTEM_FAILURE("9999", "系统错误"),
-
-    ;
+    SYSTEM_FAILURE("9999", "系统错误"),;
 
     private String code;
     private String message;
