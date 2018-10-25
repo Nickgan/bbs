@@ -1,6 +1,11 @@
 package com.exchange.bbs.forum.service.impl;
 
+import com.exchange.bbs.entity.forum.ForumCategory;
+import com.exchange.bbs.forum.repository.ForumCategoryRepository;
 import com.exchange.bbs.forum.service.ForumCategoryService;
+import com.exchange.bbs.forum.vo.AddForumCategoryReq;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,4 +18,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class ForumCatetoryServiceImpl implements ForumCategoryService {
 
+    @Autowired
+    private ForumCategoryRepository forumCategoryRepository;
+
+    @Override
+    public void add(AddForumCategoryReq req) {
+        ForumCategory category = new ForumCategory();
+        BeanUtils.copyProperties(req,category);
+        forumCategoryRepository.save(category);
+    }
 }

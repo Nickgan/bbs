@@ -21,15 +21,14 @@ public class BaseResult {
     private String message;
     private Object data;
 
+
     /**
      * 返回成功
      *
-     * @param code
-     * @param data
      * @return
      */
-    public static BaseResult success(String code, Object data) {
-        return new BaseResult(true, code, null, data);
+    public static BaseResult success() {
+        return new BaseResult(true, "200", "操作成功", null);
     }
 
     /**
@@ -41,6 +40,17 @@ public class BaseResult {
      */
     public static BaseResult fail(String code, String message) {
         return new BaseResult(false, code, message, null);
+    }
+
+    /**
+     * 返回失败
+     *
+     * @param code
+     * @param message
+     * @return
+     */
+    public static BaseResult fail(String code, String message, Object otherInfo) {
+        return new BaseResult(false, code, message, otherInfo);
     }
 
     /**

@@ -19,7 +19,8 @@ public enum OpenApiException {
      * ================================
      */
 
-    SYSTEM_FAILURE("9999", "系统错误"),;
+    SYSTEM_FAILURE("9999", "系统错误"),
+    PARAM_ERROR("10001", "参数校验失败");
 
     private String code;
     private String message;

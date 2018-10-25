@@ -26,10 +26,11 @@ public class BaseController {
     public BaseResult errorHandler(Exception ex) {
         BaseResult result;
         if (ex instanceof BusinessException) {
-            result = BaseResult.fail(((BusinessException) ex).getCode(), ex.getMessage());
+            result = BaseResult.fail(((BusinessException) ex).getCode(), ex.getMessage(), ((BusinessException) ex).getOtherInfo());
         } else {
             result = BaseResult.fail(OpenApiException.SYSTEM_FAILURE);
         }
+        ex.printStackTrace();
         return result;
     }
 

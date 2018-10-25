@@ -11,7 +11,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author gan
  * @date 2018/10/24 下午8:55
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.exchange.bbs.*")
 @EntityScan("com.exchange.bbs.entity.forum")
 @EnableDiscoveryClient
 public class ForumApplication {
