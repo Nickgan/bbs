@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * bbs系统用户
  *
@@ -28,7 +25,6 @@ public class UserController extends BaseController {
     @GetMapping(value = "/{id}")
     public Object get(@PathVariable(name = "id") String id) {
         User user = userService.get(id);
-        System.out.println("user====>" + user.getEmail());
         return user;
     }
 }

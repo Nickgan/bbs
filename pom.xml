@@ -33,24 +33,26 @@
         <module>bbs-reply</module>
         <module>bbs-user</module>
         <module>bbs-log</module>
+        <module>bbs-eureka-server</module>
     </modules>
 
     <dependencyManagement>
+        <!-- 引入cloud的pom -->
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Dalston.SR1</version>
+                <version>Finchley.M7</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <!-- 采用依赖的方式引入spring boot 这里type必须为pom,scope必须为import(这样的方式解决了maven只能单继承带来的不足)-->
             <!--<dependency>-->
-                <!--<groupId>org.springframework.boot</groupId>-->
-                <!--<artifactId>spring-boot-dependencies</artifactId>-->
-                <!--<version>${spring.boot.version}</version>-->
-                <!--<type>pom</type>-->
-                <!--<scope>import</scope>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-dependencies</artifactId>-->
+            <!--<version>${spring.boot.version}</version>-->
+            <!--<type>pom</type>-->
+            <!--<scope>import</scope>-->
             <!--</dependency>-->
         </dependencies>
     </dependencyManagement>
