@@ -23,8 +23,6 @@ public class ForumController {
 
     @Autowired
     private ForumService forumService;
-    @Autowired
-    private ForumCategoryService forumCategoryService;
 
     /**
      * 新增版块
