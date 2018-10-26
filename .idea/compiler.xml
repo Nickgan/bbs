@@ -13,6 +13,7 @@
         <module name="bbs-domain" />
         <module name="bbs-eureka-server" />
         <module name="bbs-forum" />
+        <module name="bbs-gateway" />
         <module name="bbs-log" />
         <module name="bbs-notice" />
         <module name="bbs-post" />
@@ -28,9 +29,11 @@
       <module name="bbs-admin-service" target="1.8" />
       <module name="bbs-admin-web" target="1.8" />
       <module name="bbs-common" target="1.8" />
+      <module name="bbs-config" target="1.8" />
       <module name="bbs-domain" target="1.8" />
       <module name="bbs-eureka-server" target="1.8" />
       <module name="bbs-forum" target="1.8" />
+      <module name="bbs-gateway" target="1.8" />
       <module name="bbs-log" target="1.8" />
       <module name="bbs-notice" target="1.8" />
       <module name="bbs-post" target="1.8" />

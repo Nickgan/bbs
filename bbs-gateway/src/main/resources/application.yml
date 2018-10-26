@@ -1,11 +1,11 @@
 
 
 server:
-  port: 8002
+  port: 8008
 
 spring:
   application:
-    name: bbs-zull     #服务名字
+    name: bbs-api-zull     #服务名字
 
 
 eureka:

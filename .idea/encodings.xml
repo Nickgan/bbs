@@ -7,9 +7,11 @@
     <file url="file://$PROJECT_DIR$/bbs-admin/bbs-admin-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-admin/bbs-admin-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bbs-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-domain" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-forum" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bbs-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-log" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-notice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-post" charset="UTF-8" />
