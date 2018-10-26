@@ -35,6 +35,7 @@
         <module>bbs-log</module>
         <module>bbs-eureka-server</module>
         <module>bbs-web</module>
+        <module>bbs-gateway</module>
     </modules>
 
     <dependencyManagement>
