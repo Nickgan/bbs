@@ -8,6 +8,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * 版块分类
  *
@@ -24,7 +26,12 @@ public class ForumCatetoryServiceImpl implements ForumCategoryService {
     @Override
     public void add(AddForumCategoryReq req) {
         ForumCategory category = new ForumCategory();
-        BeanUtils.copyProperties(req,category);
+        BeanUtils.copyProperties(req, category);
         forumCategoryRepository.save(category);
+    }
+
+    @Override
+    public List<ForumCategory> findAll() {
+        return forumCategoryRepository.findAll();
     }
 }

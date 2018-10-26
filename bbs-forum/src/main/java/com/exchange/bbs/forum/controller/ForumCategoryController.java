@@ -6,10 +6,14 @@ import com.exchange.bbs.common.dto.BaseResult;
 import com.exchange.bbs.entity.forum.ForumCategory;
 import com.exchange.bbs.forum.service.ForumCategoryService;
 import com.exchange.bbs.forum.vo.AddForumCategoryReq;
+import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * 版块分类
@@ -36,4 +40,8 @@ public class ForumCategoryController extends BaseController {
         return BaseResult.success();
     }
 
+    @GetMapping("/list")
+    public List<ForumCategory> list(){
+        return forumCategoryService.findAll();
+    }
 }
