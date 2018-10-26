@@ -1,4 +1,4 @@
-package com.exchange.bbs.common.utils;
+package com.exchange.bbs.web.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -9,7 +9,7 @@ import java.util.Date;
  *
  * @author lx
  */
-public class DateUtils {
+public class DateUtil {
     public static final SimpleDateFormat yyyyMMdd = new SimpleDateFormat("yyyyMMdd");
     public static final SimpleDateFormat yyyy_MM_dd = new SimpleDateFormat("yyyy-MM-dd");
     public static final SimpleDateFormat yyyy_MM_ddHHmmss = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -55,7 +55,7 @@ public class DateUtils {
                     try {
                         return yyyyMMdd.parse(dateStr);
                     } catch (Exception e3) {
-                        PrintUtils.print("can't parse to Date :" + dateStr);
+                        PrintUtil.print("can't parse to Date :" + dateStr);
                         return new Date();
                     }
                 }
@@ -87,7 +87,7 @@ public class DateUtils {
                         date.setTime(date.getTime() + 24 * 60 * 60 * 1000);
                         return formateDateyyyyMMdd(date);
                     } catch (Exception e3) {
-                        PrintUtils.print("cant getNextDayString :" + dateStr);
+                        PrintUtil.print("cant getNextDayString :" + dateStr);
                         return "";
                     }
                 }

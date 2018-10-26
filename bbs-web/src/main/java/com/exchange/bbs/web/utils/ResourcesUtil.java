@@ -1,0 +1,76 @@
+package com.exchange.bbs.web.utils;
+
+import java.text.MessageFormat;
+import java.util.*;
+
+/**
+ * 资源文件读取工具类
+ *
+ * @author ganbo
+ * 2016年6月21日 下午10:16:15
+ */
+public class ResourcesUtil {
+
+    //系统语言环境，默认为中文zh
+    private static final String LANGUAGE = "zh";
+
+    //系统国家环境，默认为中国CN
+    private static final String COUNTRY = "CN";
+
+    private static Locale getLocale() {
+        Locale locale = new Locale(LANGUAGE, COUNTRY);
+        return locale;
+    }
+
+    /**
+     * 通过key从资源文件读取内容，并格式化
+     *
+     * @param fileName 资源文件名
+     * @param key      索引
+     * @param objs     格式化参数
+     * @return 格式化后的内容
+     */
+    public static String getFormateValue(String fileName, String key, Object[] objs) {
+        String pattern = getValue(fileName, key);
+        String value = MessageFormat.format(pattern, objs);
+        return value;
+    }
+
+    /**
+     * 通过key从资源文件读取内容
+     *
+     * @param fileName 资源文件名
+     * @param key      索引
+     * @return 索引对应的内容
+     */
+    public static String getValue(String baseName, String key) {
+        String retValue = "";
+        try {
+            Locale locale = getLocale();
+            ResourceBundle rb = ResourceBundle.getBundle(baseName, locale);
+            retValue = (String) rb.getObject(key);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return retValue;
+    }
+
+    /**
+     * 获取资源文件的key的list集合
+     *
+     * @param baseName properties资源文件的名字,不包括properties后缀名
+     * @return
+     */
+    public static List<String> getKeyList(String baseName) {
+        Locale locale = getLocale();
+        ResourceBundle rb = ResourceBundle.getBundle(baseName, locale);
+        List<String> reslist = new ArrayList<String>();
+        Set<String> keyset = rb.keySet();
+        for (Iterator<String> it = keyset.iterator(); it.hasNext(); ) {
+            String lkey = (String) it.next();
+            reslist.add(lkey);
+        }
+        return reslist;
+    }
+
+}
