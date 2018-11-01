@@ -1,7 +1,11 @@
 package com.exchange.bbs.common.config;
 
+import com.exchange.bbs.common.repository.BaseRepositoryFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
 /**
@@ -12,13 +16,13 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
  */
 
 @Configuration
+@Order(Ordered.HIGHEST_PRECEDENCE)
+@EnableJpaRepositories(basePackages = "com.**.repository", repositoryFactoryBeanClass = BaseRepositoryFactoryBean.class)
 public class CommonConfig {
 
 
     /**
      * 使用Hibernate做参数校验配置
-     *
-     * @return
      */
     @Bean
     public LocalValidatorFactoryBean localValidatorFactoryBean() {
@@ -26,4 +30,13 @@ public class CommonConfig {
         factoryBean.setProviderClass(org.hibernate.validator.HibernateValidator.class);
         return factoryBean;
     }
+//
+//    /**
+//     * 注册自定义Jpa 扩展
+//     */
+//    @Bean
+//    public PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor() {
+//        return new PersistenceExceptionTranslationPostProcessor();
+//    }
+
 }
