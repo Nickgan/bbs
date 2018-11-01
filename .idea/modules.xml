@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/bbs-notice/bbs-notice.iml" filepath="$PROJECT_DIR$/bbs-notice/bbs-notice.iml" />
       <module fileurl="file://$PROJECT_DIR$/bbs-post/bbs-post.iml" filepath="$PROJECT_DIR$/bbs-post/bbs-post.iml" />
       <module fileurl="file://$PROJECT_DIR$/bbs-reply/bbs-reply.iml" filepath="$PROJECT_DIR$/bbs-reply/bbs-reply.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbs-sso/bbs-sso.iml" filepath="$PROJECT_DIR$/bbs-sso/bbs-sso.iml" />
       <module fileurl="file://$PROJECT_DIR$/bbs-user/bbs-user.iml" filepath="$PROJECT_DIR$/bbs-user/bbs-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/bbs-web/bbs-web.iml" filepath="$PROJECT_DIR$/bbs-web/bbs-web.iml" />
     </modules>

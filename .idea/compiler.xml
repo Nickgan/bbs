@@ -18,6 +18,7 @@
         <module name="bbs-notice" />
         <module name="bbs-post" />
         <module name="bbs-reply" />
+        <module name="bbs-sso" />
         <module name="bbs-user" />
         <module name="bbs-web" />
       </profile>
@@ -38,6 +39,7 @@
       <module name="bbs-notice" target="1.8" />
       <module name="bbs-post" target="1.8" />
       <module name="bbs-reply" target="1.8" />
+      <module name="bbs-sso" target="1.8" />
       <module name="bbs-user" target="1.8" />
       <module name="bbs-web" target="1.8" />
     </bytecodeTargetLevel>
