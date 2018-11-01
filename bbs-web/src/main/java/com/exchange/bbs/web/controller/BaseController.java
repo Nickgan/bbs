@@ -1,6 +1,9 @@
 package com.exchange.bbs.web.controller;
 
 
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 /**
  * 基础控制器
  *

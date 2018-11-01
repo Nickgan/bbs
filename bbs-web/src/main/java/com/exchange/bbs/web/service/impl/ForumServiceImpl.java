@@ -1,6 +1,7 @@
 package com.exchange.bbs.web.service.impl;
 
 import com.exchange.bbs.web.service.ForumService;
+import com.exchange.bbs.web.utils.ConstantConfig;
 import com.exchange.bbs.web.utils.HttpClientUtils;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,6 @@ public class ForumServiceImpl implements ForumService{
 
     @Override
     public String categoryList() throws Exception {
-        return HttpClientUtils.get("http://localhost:8002/forumcategory/list");
+        return HttpClientUtils.get(ConstantConfig.API_FORUM_CATEGORY_LIST);
     }
 }
