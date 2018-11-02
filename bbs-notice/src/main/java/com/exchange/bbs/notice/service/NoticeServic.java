@@ -1,6 +1,7 @@
 package com.exchange.bbs.notice.service;
 
 import com.exchange.bbs.entity.notice.Notice;
+import com.exchange.bbs.notice.vo.AddNoticeReq;
 
 /**
  * 系统公告
@@ -10,6 +11,17 @@ import com.exchange.bbs.entity.notice.Notice;
  */
 public interface NoticeServic {
 
+    /**
+     * 获取系统最新公告
+     *
+     * @return
+     */
     Notice getFirst();
 
+    /**
+     * 新增公告
+     *
+     * @param vo
+     */
+    void add(AddNoticeReq vo);
 }

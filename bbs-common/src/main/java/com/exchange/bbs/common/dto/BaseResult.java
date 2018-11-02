@@ -1,6 +1,7 @@
 package com.exchange.bbs.common.dto;
 
 import com.exchange.bbs.common.exception.enums.OpenApiException;
+import javafx.beans.binding.ObjectExpression;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -29,6 +30,10 @@ public class BaseResult {
      */
     public static BaseResult success() {
         return new BaseResult(true, "200", "操作成功", null);
+    }
+
+    public static BaseResult success(Object data){
+        return new BaseResult(true,"200","操作成功",data);
     }
 
     /**

@@ -3,6 +3,8 @@ package com.exchange.bbs.notice.service.impl;
 import com.exchange.bbs.entity.notice.Notice;
 import com.exchange.bbs.notice.repository.NoticeRepository;
 import com.exchange.bbs.notice.service.NoticeServic;
+import com.exchange.bbs.notice.vo.AddNoticeReq;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,5 +24,12 @@ public class NoticeServiceImpl implements NoticeServic {
     @Override
     public Notice getFirst() {
         return noticeRepository.getFirst();
+    }
+
+    @Override
+    public void add(AddNoticeReq vo) {
+        Notice notice = new Notice();
+        BeanUtils.copyProperties(vo, notice);
+        noticeRepository.save(notice);
     }
 }
