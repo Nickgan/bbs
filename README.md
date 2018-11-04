@@ -20,21 +20,21 @@ bbs-eureka-server-second:9002   #eureka集群
 
 bbs-admin:8888                  #后台管理
 
-bbs-forum:9011                  #版块
+bbs-forum:9011
 
-bbs-user:9021                   #系统用户
+bbs-user:9021
     
-bbs-log:9031                    #系统日志
+bbs-log:9031
 
-bbs-notice:9041                 #系统公告
+bbs-notice:9041
 
-bbs-post:9051                   #帖子
+bbs-post:9051
 
-bbs-reply:9061                  #帖子回复
+bbs-reply:9061
 
-bbs-web:9071                    #前端
+bbs-web:9071
 
-bbs-sso:9081                    #单点登录
+bbs-sso:9081
 
-bbs-gateway:9091                #系统网关
+bbs-gateway:9091
 
