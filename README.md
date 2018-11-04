@@ -1,8 +1,9 @@
-# bbs
+#bbs=====================================
 spring boot , sc 学习
 
 
-#host配置
+#host配置==================================
+
 127.0.0.1 eureka9001.com
 
 127.0.0.1 eureka9002.com
@@ -11,7 +12,8 @@ spring boot , sc 学习
 
 
 
-#模块端口分配
+#模块端口分配===============================
+
 bbs-eureka-server:9001          #eureka集群
 
 bbs-eureka-server-second:9002   #eureka集群
