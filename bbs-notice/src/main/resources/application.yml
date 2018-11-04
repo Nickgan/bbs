@@ -1,6 +1,7 @@
 
 
-
+server:
+  port: 9041
 
 spring:
   application:

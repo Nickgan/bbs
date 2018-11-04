@@ -1,13 +1,15 @@
 
 
+server:
+  port: 9081
 
 
 spring:
   application:
-    name: bbs-post
+    name: bbs-reply
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bbs-post?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/bbs-reply?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
     username: root
     password: root
   jpa:
@@ -15,5 +17,3 @@ spring:
       ddl-auto: update
     show-sql: true
 
-server:
-  port: 9051

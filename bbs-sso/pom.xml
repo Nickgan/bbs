@@ -11,5 +11,12 @@
 
     <artifactId>bbs-sso</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.exchange</groupId>
+            <artifactId>bbs-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

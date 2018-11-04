@@ -1,6 +1,7 @@
 
 
-
+server:
+  port: 9061
 
 spring:
   application:
@@ -15,5 +16,3 @@ spring:
       ddl-auto: update
     show-sql: true
 
-server:
-  port: 8005
