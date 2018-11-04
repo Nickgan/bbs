@@ -29,7 +29,7 @@ spring:
 eureka:
   client:  #客户端服务注册到eureka中
     service-url:
-      defaultZone: http://eureka9001.com:9001/eureka
+      defaultZone: http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/
   instance:
     instance-id: forum_service_9011  #自定义服务名称信息
     prefer-ip-address: true #访问路径可以显示IP信息
