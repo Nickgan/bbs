@@ -6,9 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1fc98e3-344e-4dc6-a190-96a451c73f99" name="Default" comment="">
+    <list default="true" id="a1fc98e3-344e-4dc6-a190-96a451c73f99" name="Default" comment="forum版块模块修改微服务在eureka中的注册名字和显示当前forum服务的ip地址">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bbs-forum/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/bbs-forum/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1109,11 +1108,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541145596416</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="forum版块模块修改微服务在eureka中的注册名字和显示当前forum服务的ip地址">
+      <created>1541322688896</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1541322688902</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92417000" />
+    <option name="totallyTimeSpent" value="92465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="22" width="1440" height="814" extended-state="6" />
@@ -1190,7 +1196,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
     <MESSAGE value="get系统公告" />
     <MESSAGE value="继续完善项目的创建" />
     <MESSAGE value="继续完善项目的创建1111" />
@@ -1215,7 +1220,8 @@
     <MESSAGE value="导入各种工具类" />
     <MESSAGE value="公共jpa扩展" />
     <MESSAGE value="新增公告" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增公告" />
+    <MESSAGE value="forum版块模块修改微服务在eureka中的注册名字和显示当前forum服务的ip地址" />
+    <option name="LAST_COMMIT_MESSAGE" value="forum版块模块修改微服务在eureka中的注册名字和显示当前forum服务的ip地址" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
