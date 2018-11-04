@@ -34,3 +34,5 @@ bbs-web:9071                    #前端
 
 bbs-sso:9081                    #单点登录
 
+bbs-gateway:9091                #系统网关
+
