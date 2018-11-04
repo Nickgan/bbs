@@ -37,6 +37,7 @@
         <module>bbs-web</module>
         <module>bbs-gateway</module>
         <module>bbs-sso</module>
+        <module>bbs-eureka-server-second</module>
     </modules>
 
     <dependencyManagement>
@@ -59,7 +60,7 @@
             <!--</dependency>-->
         </dependencies>
     </dependencyManagement>
-    
+
 
     <build>
         <finalName>bbs</finalName>

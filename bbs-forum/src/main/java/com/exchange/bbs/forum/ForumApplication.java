@@ -13,7 +13,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication(scanBasePackages = "com.exchange.bbs.*")
 @EntityScan("com.exchange.bbs.entity.forum")
-@EnableDiscoveryClient
+@EnableDiscoveryClient      //开启服务注册和发现
 public class ForumApplication {
 
     public static void main(String[] args) {

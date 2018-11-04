@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/bbs-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-domain" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bbs-eureka-server-second" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-forum" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bbs-log" charset="UTF-8" />
