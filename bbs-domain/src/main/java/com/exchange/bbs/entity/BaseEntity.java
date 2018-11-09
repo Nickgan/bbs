@@ -3,10 +3,7 @@ package com.exchange.bbs.entity;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 import javax.print.attribute.standard.MediaSize;
 import java.io.Serializable;
 import java.util.Date;
@@ -31,5 +28,14 @@ public abstract class BaseEntity implements Serializable {
     private Date updateTime;
     @Column(name = "CREATETIME")
     private Date createTime;
+
+    @PreUpdate
+    @PrePersist
+    public void updateTime() {
+        if (this.createTime == null) {
+            this.createTime = new Date();
+        }
+        this.updateTime = new Date();
+    }
 
 }

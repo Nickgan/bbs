@@ -26,8 +26,6 @@ public class ForumCategoryController extends BaseController {
 
     @Autowired
     ForumCategoryService forumCategoryService;
-    @Autowired
-    DiscoveryClient discoveryClient;
 
     /**
      * 新增版块分类
