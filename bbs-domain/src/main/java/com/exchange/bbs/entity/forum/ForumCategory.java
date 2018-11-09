@@ -2,6 +2,7 @@ package com.exchange.bbs.entity.forum;
 
 import com.exchange.bbs.entity.BaseEntity;
 import lombok.Data;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Entity;
@@ -16,6 +17,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "bbs_forum_category")
 @Data
+@ToString(callSuper = true)
 @Accessors(chain = true)
 public class ForumCategory extends BaseEntity {
 

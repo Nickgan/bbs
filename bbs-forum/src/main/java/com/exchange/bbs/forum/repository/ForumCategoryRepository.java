@@ -12,4 +12,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface ForumCategoryRepository extends BaseRepository<ForumCategory, String> {
 
+
+    ForumCategory findByName(String name);
+
 }

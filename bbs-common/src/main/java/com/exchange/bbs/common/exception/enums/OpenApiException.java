@@ -21,7 +21,12 @@ public enum OpenApiException {
 
     SYSTEM_FAILURE("9999", "系统错误"),
     PARAM_ERROR("10001", "参数校验失败"),
-    FORUM_CATEGORY_NOT_FOUNT("10002", "版块分类不存在");
+
+    /**
+     * ===============版块和版块分类=====
+     */
+    FORUM_CATEGORY_NOT_FOUNT("10002", "版块分类不存在"),
+    FORUM_CATEGORY_ALREADY_EXIST("10003", "版块分类已经存在");
 
     private String code;
     private String message;

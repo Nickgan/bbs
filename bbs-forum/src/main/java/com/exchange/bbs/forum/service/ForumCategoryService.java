@@ -2,6 +2,7 @@ package com.exchange.bbs.forum.service;
 
 import com.exchange.bbs.entity.forum.ForumCategory;
 import com.exchange.bbs.forum.vo.AddForumCategoryReq;
+import com.exchange.bbs.forum.vo.UpdateForumCategoryReq;
 
 import java.util.List;
 
@@ -16,4 +17,11 @@ public interface ForumCategoryService {
     void add(AddForumCategoryReq req);
 
     List<ForumCategory> findAll();
+
+    ForumCategory get(String id);
+
+    void deleteById(String id);
+
+    void update(UpdateForumCategoryReq req);
+
 }
