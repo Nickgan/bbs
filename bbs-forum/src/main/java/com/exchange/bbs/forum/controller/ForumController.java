@@ -9,6 +9,7 @@ import com.exchange.bbs.forum.vo.ForumListResp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 /**
@@ -43,8 +44,9 @@ public class ForumController {
      * @param id
      * @return
      */
-    @DeleteMapping("/{id}")
-    public BaseResult delete(@PathVariable("id") String id) {
+    @DeleteMapping
+    @ParamValidate
+    public BaseResult delete(@NotBlank(message = "版块Id不能为空") String id) {
         forumService.delete(id);
         return BaseResult.success();
     }
@@ -65,8 +67,9 @@ public class ForumController {
      * @param forumId
      * @return
      */
-    @GetMapping("/addPostCount/{forumId}")
-    public BaseResult addPostCount(@PathVariable("forumId") String forumId) {
+    @GetMapping("/addPostCount")
+    @ParamValidate
+    public BaseResult addPostCount(@NotBlank(message = "版块Id不能为空")String forumId) {
         forumService.addPostCount(forumId);
         return BaseResult.success();
     }
@@ -78,8 +81,9 @@ public class ForumController {
      * @param forumId
      * @return
      */
-    @GetMapping("/addReplyCount/{forumId}")
-    public BaseResult addReplyCount(@PathVariable("forumId") String forumId) {
+    @GetMapping("/addReplyCount")
+    @ParamValidate
+    public BaseResult addReplyCount(@NotBlank(message = "版块Id不能为空") String forumId) {
         forumService.addReplyCount(forumId);
         return BaseResult.success();
     }
