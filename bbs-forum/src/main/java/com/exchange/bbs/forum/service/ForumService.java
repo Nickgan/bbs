@@ -20,8 +20,31 @@ public interface ForumService {
      */
     void add(AddForumReq req);
 
+    /**
+     * 删除版块
+     *
+     * @param id
+     */
     void delete(String id);
 
+    /**
+     * 版块列表
+     *
+     * @return
+     */
     List<ForumListResp> list();
 
+    /**
+     * 发一篇帖子,对应版块帖子数+1
+     *
+     * @param forumId 版块id
+     */
+    void addPostCount(String forumId);
+
+    /**
+     * 回复一篇帖子,对应回复数量+1
+     *
+     * @param forumId
+     */
+    void addReplyCount(String forumId);
 }

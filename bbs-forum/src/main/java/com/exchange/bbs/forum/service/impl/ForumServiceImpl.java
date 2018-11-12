@@ -75,4 +75,24 @@ public class ForumServiceImpl implements ForumService {
         }
         return list;
     }
+
+    @Override
+    public void addPostCount(String forumId) {
+        Forum forum = forumRepository.findByForumId(forumId);
+        if (forum == null) {
+            throw new BusinessException(OpenApiException.FORUM__NOT_FOUNT);
+        }
+        forum.setPostCount(forum.getReplyCount() + 1);
+        forumRepository.save(forum);
+    }
+
+    @Override
+    public void addReplyCount(String forumId) {
+        Forum forum = forumRepository.findByForumId(forumId);
+        if (forum == null) {
+            throw new BusinessException(OpenApiException.FORUM__NOT_FOUNT);
+        }
+        forum.setReplyCount(forum.getReplyCount() + 1);
+        forumRepository.save(forum);
+    }
 }

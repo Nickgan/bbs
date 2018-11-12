@@ -17,8 +17,10 @@ public interface ForumRepository extends BaseRepository<Forum, String> {
 
     Forum findByName(String name);
 
-
     @Query("select o from Forum o where o.category.id = ?1 ")
     List<Forum> findByCategoryId(String categoryId);
+
+    @Query("select o from Forum o where o.id = ?1 ")
+    Forum findByForumId(String id);
 
 }

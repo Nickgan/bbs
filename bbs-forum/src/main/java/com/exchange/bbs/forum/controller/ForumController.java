@@ -58,4 +58,29 @@ public class ForumController {
     public List<ForumListResp> list() {
         return forumService.list();
     }
+
+    /**
+     * 新增主题数(发一篇帖子,对应版块主题数量加一)
+     *
+     * @param forumId
+     * @return
+     */
+    @GetMapping("/addPostCount/{forumId}")
+    public BaseResult addPostCount(@PathVariable("forumId") String forumId) {
+        forumService.addPostCount(forumId);
+        return BaseResult.success();
+    }
+
+
+    /**
+     * 新增版块帖子回复数(回复帖子,对应版块帖子回复数量加一)
+     *
+     * @param forumId
+     * @return
+     */
+    @GetMapping("/addReplyCount/{forumId}")
+    public BaseResult addReplyCount(@PathVariable("forumId") String forumId) {
+        forumService.addReplyCount(forumId);
+        return BaseResult.success();
+    }
 }
