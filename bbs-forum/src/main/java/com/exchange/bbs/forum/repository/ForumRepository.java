@@ -3,6 +3,9 @@ package com.exchange.bbs.forum.repository;
 import com.exchange.bbs.common.repository.BaseRepository;
 import com.exchange.bbs.entity.forum.Forum;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import java.util.List;
 
 /**
  * 版块
@@ -13,5 +16,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface ForumRepository extends BaseRepository<Forum, String> {
 
     Forum findByName(String name);
+
+
+    @Query("select o from Forum o where o.category.id = ?1 ")
+    List<Forum> findByCategoryId(String categoryId);
 
 }

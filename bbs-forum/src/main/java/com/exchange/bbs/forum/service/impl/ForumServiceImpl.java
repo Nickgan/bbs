@@ -8,10 +8,15 @@ import com.exchange.bbs.forum.repository.ForumCategoryRepository;
 import com.exchange.bbs.forum.repository.ForumRepository;
 import com.exchange.bbs.forum.service.ForumService;
 import com.exchange.bbs.forum.vo.AddForumReq;
-import com.netflix.discovery.converters.Auto;
+import com.exchange.bbs.forum.vo.ForumListDto;
+import com.exchange.bbs.forum.vo.ForumListResp;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 版块
@@ -42,5 +47,32 @@ public class ForumServiceImpl implements ForumService {
         BeanUtils.copyProperties(req, forum);
         forum.setCategory(forumCategory);
         forumRepository.save(forum);
+    }
+
+    @Override
+    public void delete(String id) {
+        forumRepository.deleteById(id);
+    }
+
+    @Override
+    public List<ForumListResp> list() {
+        List<ForumListResp> list = new ArrayList<>();
+        List<ForumCategory> forumCategoryList = forumCategoryRepository.findAll();
+        for (ForumCategory category : forumCategoryList) {
+            ForumListResp resp = new ForumListResp();
+            resp.setCategoryName(category.getName());
+            List<Forum> forumList = forumRepository.findByCategoryId(category.getId());
+            if (!CollectionUtils.isEmpty(forumList)) {
+                List<ForumListDto> dtos = new ArrayList<>();
+                for (Forum forum : forumList) {
+                    ForumListDto dto = new ForumListDto();
+                    BeanUtils.copyProperties(forum, dto);
+                    dtos.add(dto);
+                }
+                resp.setList(dtos);
+            }
+            list.add(resp);
+        }
+        return list;
     }
 }

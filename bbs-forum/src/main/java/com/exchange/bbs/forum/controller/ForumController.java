@@ -5,10 +5,11 @@ import com.exchange.bbs.common.dto.BaseResult;
 import com.exchange.bbs.forum.service.ForumCategoryService;
 import com.exchange.bbs.forum.service.ForumService;
 import com.exchange.bbs.forum.vo.AddForumReq;
+import com.exchange.bbs.forum.vo.ForumListResp;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 版块
@@ -35,4 +36,26 @@ public class ForumController {
         return BaseResult.success();
     }
 
+
+    /**
+     * 删除版块
+     *
+     * @param id
+     * @return
+     */
+    @DeleteMapping("/{id}")
+    public BaseResult delete(@PathVariable("id") String id) {
+        forumService.delete(id);
+        return BaseResult.success();
+    }
+
+    /**
+     * 版块列表
+     *
+     * @return
+     */
+    @GetMapping("/list")
+    public List<ForumListResp> list() {
+        return forumService.list();
+    }
 }

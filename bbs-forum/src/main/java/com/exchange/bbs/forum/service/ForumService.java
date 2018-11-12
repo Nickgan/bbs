@@ -1,6 +1,9 @@
 package com.exchange.bbs.forum.service;
 
 import com.exchange.bbs.forum.vo.AddForumReq;
+import com.exchange.bbs.forum.vo.ForumListResp;
+
+import java.util.List;
 
 /**
  * 版块
@@ -16,5 +19,9 @@ public interface ForumService {
      * @param req
      */
     void add(AddForumReq req);
+
+    void delete(String id);
+
+    List<ForumListResp> list();
 
 }
