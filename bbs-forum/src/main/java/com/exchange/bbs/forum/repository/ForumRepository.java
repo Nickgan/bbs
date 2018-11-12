@@ -12,4 +12,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface ForumRepository extends BaseRepository<Forum, String> {
 
+    Forum findByName(String name);
+
 }

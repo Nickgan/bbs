@@ -31,11 +31,16 @@ public class ForumServiceImpl implements ForumService {
     @Override
     public void add(AddForumReq req) {
         Forum forum = new Forum();
-        ForumCategory forumCategory = forumCategoryRepository.getOne(req.getCategoryId());
+        ForumCategory forumCategory = forumCategoryRepository.getById(req.getCategoryId());
         if (forumCategory == null) {
             throw new BusinessException(OpenApiException.FORUM_CATEGORY_NOT_FOUNT);
         }
+        Forum byName = forumRepository.findByName(req.getName());
+        if (byName != null) {
+            throw new BusinessException(OpenApiException.FORUM_ALREADY_EXIST);
+        }
         BeanUtils.copyProperties(req, forum);
+        forum.setCategory(forumCategory);
         forumRepository.save(forum);
     }
 }

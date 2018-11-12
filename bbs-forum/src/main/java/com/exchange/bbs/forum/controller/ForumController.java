@@ -34,4 +34,5 @@ public class ForumController {
         forumService.add(req);
         return BaseResult.success();
     }
+
 }

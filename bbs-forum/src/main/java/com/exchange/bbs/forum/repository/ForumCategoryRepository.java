@@ -15,4 +15,6 @@ public interface ForumCategoryRepository extends BaseRepository<ForumCategory, S
 
     ForumCategory findByName(String name);
 
+    ForumCategory getById(String id);
+
 }

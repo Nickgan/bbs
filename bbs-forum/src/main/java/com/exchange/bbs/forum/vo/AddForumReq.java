@@ -2,6 +2,7 @@ package com.exchange.bbs.forum.vo;
 
 import lombok.Data;
 
+import javax.validation.constraints.NotBlank;
 import java.util.Date;
 
 /**
@@ -14,14 +15,16 @@ import java.util.Date;
 @Data
 public class AddForumReq {
 
-    private String categoryId;  //版块分类Id
+    @NotBlank(message = "版块分类必传")
+    private String categoryId;
 
-    private String name;        //版块名称
-    private String description; //版块描述
-    private String author;      //版主
-    private long postCount;     //帖子数
-    private long replyCount;    //回帖数
-    private String mostNewPostAuthor;   //最新帖子名字
-    private Date mostNewPostDate;       //最新发帖时间
+    @NotBlank(message = "名称必传")
+    private String name;
+    @NotBlank(message = "描述必传")
+    private String description;
+    @NotBlank(message = "版主Id必传")
+    private String userId;
+    @NotBlank(message = "版主名必传")
+    private String username;
 
 }

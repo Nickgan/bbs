@@ -29,4 +29,5 @@ public interface BaseRepository<T, ID extends Serializable> extends JpaRepositor
     Page<T> getResultPageByQuery(String hql, Pageable pageable, List<Object> params);
 
     List<T> findByHql(String hql, List<Object> params);
+
 }

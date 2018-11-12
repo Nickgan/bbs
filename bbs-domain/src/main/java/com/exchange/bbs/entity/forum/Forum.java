@@ -25,7 +25,8 @@ public class Forum extends BaseEntity {
 
     private String name;        //版块名称
     private String description; //版块描述
-    private String author;      //版主
+    private String userId;      //版主ID
+    private String username;    //版主
     private long postCount;     //帖子数
     private long replyCount;    //回帖数
 

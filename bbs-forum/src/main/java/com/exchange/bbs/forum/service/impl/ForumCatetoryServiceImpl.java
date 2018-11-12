@@ -58,7 +58,7 @@ public class ForumCatetoryServiceImpl implements ForumCategoryService {
 
     @Override
     public void update(UpdateForumCategoryReq req) {
-        ForumCategory category = forumCategoryRepository.findById(req.getId()).get();
+        ForumCategory category = forumCategoryRepository.getById(req.getId());
         if (category == null) {
             throw new BusinessException(OpenApiException.FORUM_CATEGORY_NOT_FOUNT);
         }

@@ -26,7 +26,8 @@ public enum OpenApiException {
      * ===============版块和版块分类=====
      */
     FORUM_CATEGORY_NOT_FOUNT("10002", "版块分类不存在"),
-    FORUM_CATEGORY_ALREADY_EXIST("10003", "版块分类已经存在");
+    FORUM_CATEGORY_ALREADY_EXIST("10003", "版块分类已经存在"),
+    FORUM_ALREADY_EXIST("10004", "版块已经存在");;
 
     private String code;
     private String message;
