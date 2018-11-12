@@ -20,10 +20,13 @@ public class AddForumReq {
 
     @NotBlank(message = "名称必传")
     private String name;
+
     @NotBlank(message = "描述必传")
     private String description;
+
     @NotBlank(message = "版主Id必传")
     private String userId;
+
     @NotBlank(message = "版主名必传")
     private String username;
 
