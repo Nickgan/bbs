@@ -6,9 +6,33 @@ server:
 spring:
   application:
     name: bbs-api-zull     #服务名字
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bbs-user?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 
+#服务注册
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9000/eureka
+      defaultZone: http://eureka9001.com:9001/eureka/ #,http://eureka9002.com:9002/eureka/
+
+
+#服务路由
+zuul:
+  routes:
+    forum:
+      path: /forum/**
+      serviceId: bbs-forum
+#    bbs-post:
+#      path: /post/**
+#      serviceId: bbs-post
+#    bbs-reply:
+#      path: /reply/**
+#      serviceId: /bbs-reply

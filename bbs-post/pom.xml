@@ -18,5 +18,10 @@
             <artifactId>bbs-domain</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
     </dependencies>
 </project>

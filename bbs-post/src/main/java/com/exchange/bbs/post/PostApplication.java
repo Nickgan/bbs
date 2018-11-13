@@ -3,6 +3,7 @@ package com.exchange.bbs.post;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * 帖子
@@ -13,6 +14,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
 @EntityScan("com.exchange.bbs.entity.post")
+@EnableFeignClients
 public class PostApplication {
 
     public static void main(String[] args) {

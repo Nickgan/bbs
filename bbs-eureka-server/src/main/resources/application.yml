@@ -15,6 +15,6 @@ eureka:
     fetchRegistry: false
     #eureka.client.serviceUrl.defaultZone ：设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。
     service-url:
-      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #单节点配置
-      defaultZone: http://eureka9002.com:9002/eureka/ #集群配置
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #单节点配置
+      #defaultZone: http://eureka9002.com:9002/eureka/ #集群配置
 
