@@ -2,6 +2,8 @@ package com.exchange.bbs.user.service;
 
 import com.exchange.bbs.entity.user.User;
 
+import java.util.List;
+
 /**
  * bbs用户
  *
@@ -12,4 +14,5 @@ public interface UserService {
 
     User get(String id);
 
+    List<User> list();
 }

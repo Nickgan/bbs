@@ -19,4 +19,9 @@ public class ForumServiceImpl implements ForumService{
     public String categoryList() throws Exception {
         return HttpClientUtils.get(ConstantConfig.API_FORUM_CATEGORY_LIST);
     }
+
+    @Override
+    public String forumList() throws Exception {
+        return HttpClientUtils.get(ConstantConfig.API_FORUM_LIST);
+    }
 }

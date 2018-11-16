@@ -8,7 +8,10 @@ package com.exchange.bbs.web.utils;
  */
 public interface ConstantConfig {
 
-     //获取版块列表
-     String  API_FORUM_CATEGORY_LIST = "http://localhost:8002/forumcategory/list";
+     //获取版块分类列表
+     String  API_FORUM_CATEGORY_LIST = "http://localhost:9011/forumcategory/list";
+
+     //获取板块列表
+     String  API_FORUM_LIST = "http://localhost:9011/forum/list";
 
 }

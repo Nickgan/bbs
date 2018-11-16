@@ -32,10 +32,14 @@ zuul:
   routes:
     forum:
       path: /forum/**
-    serviceId: bbs-forum
+  # serviceId: bbs-forum
 #    bbs-post:
 #      path: /post/**
 #      serviceId: bbs-post
 #    bbs-reply:
 #      path: /reply/**
 #      serviceId: /bbs-reply
+
+ribbon:
+  eureka:
+    enable: true

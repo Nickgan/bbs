@@ -19,10 +19,16 @@ public class ForumController extends BaseController {
     @Autowired
     private ForumService forumService;
 
-    @RequestMapping("/category/list")
+    @RequestMapping("/forum/categoryList")
     @ResponseBody
-    public String list() throws Exception {
+    public String categoryList() throws Exception {
         return forumService.categoryList();
+    }
+
+    @RequestMapping("/forum/list")
+    @ResponseBody
+    public String forumList() throws Exception {
+        return forumService.forumList();
     }
 
 }

@@ -10,4 +10,5 @@ public interface ForumService {
 
     String categoryList() throws Exception;
 
+    String forumList() throws Exception;
 }

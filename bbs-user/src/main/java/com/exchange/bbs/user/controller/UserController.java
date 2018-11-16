@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * bbs系统用户
  *
@@ -26,5 +28,10 @@ public class UserController extends BaseController {
     public User get(@PathVariable(name = "id") String id) {
         User user = userService.get(id);
         return user;
+    }
+
+    @GetMapping("/list")
+    public List<User> list() {
+        return userService.list();
     }
 }
