@@ -1,10 +1,14 @@
 package com.exchange.bbs.web.controller;
 
 import com.exchange.bbs.web.service.ForumService;
+import com.exchange.bbs.web.utils.JSONUtil;
+import com.exchange.bbs.web.vo.ForumListResp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
 
 /**
  * 版块
@@ -27,8 +31,8 @@ public class ForumController extends BaseController {
 
     @RequestMapping("/forum/list")
     @ResponseBody
-    public String forumList() throws Exception {
-        return forumService.forumList();
+    public List<ForumListResp> forumList() throws Exception {
+        return JSONUtil.jsonArrayToObjectList(forumService.forumList(), ForumListResp.class);
     }
 
 }

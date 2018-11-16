@@ -1,4 +1,4 @@
-package com.exchange.bbs.web.dto;
+package com.exchange.bbs.web.vo;
 
 import com.exchange.bbs.web.exception.enums.OpenApiException;
 import lombok.AllArgsConstructor;
