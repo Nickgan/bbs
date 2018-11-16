@@ -1,5 +1,6 @@
 package com.exchange.bbs.common.repository;
 
+import com.exchange.bbs.common.repository.BaseRepositoryImpl;
 import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.JpaRepositoryFactory;
 import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean;

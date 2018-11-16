@@ -2,8 +2,6 @@ package com.exchange.bbs.forum.repository;
 
 import com.exchange.bbs.common.repository.BaseRepository;
 import com.exchange.bbs.entity.forum.ForumCategory;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 /**
  * 版块分类

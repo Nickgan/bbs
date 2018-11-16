@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author gan
  * @date 2018/10/26 下午4:00
  */
-@Component
+//@Component
 public class ZullFilter extends ZuulFilter {
 
     private static Logger log = LoggerFactory.getLogger(ZullFilter.class);
