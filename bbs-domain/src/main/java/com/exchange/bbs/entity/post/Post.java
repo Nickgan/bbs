@@ -1,10 +1,13 @@
 package com.exchange.bbs.entity.post;
 
 import com.exchange.bbs.entity.BaseEntity;
+import com.exchange.bbs.enums.PostStatus;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Table;
 import java.util.Date;
 
@@ -30,5 +33,8 @@ public class Post extends BaseEntity {
     private long clientRate;    //点击率
     private long replyCount;    //回复数量统计
     private Date lastReplyDate; //最后回复时间
+
+    @Enumerated(EnumType.STRING)
+    private PostStatus status;  //帖子状态
 
 }
