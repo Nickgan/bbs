@@ -22,6 +22,5 @@ import javax.persistence.Table;
 public class ForumCategory extends BaseEntity {
 
     private String name;         //版块分类名称
-    private String description;  //版块分类描述
 
 }

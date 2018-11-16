@@ -16,7 +16,4 @@ public class AddForumCategoryReq {
     @NotBlank(message = "版块分类名称不能为空")
     private String name;
 
-    @NotBlank(message = "版块分类描述不能为空")
-    private String description;
-
 }

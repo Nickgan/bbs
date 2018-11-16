@@ -32,7 +32,7 @@ zuul:
   routes:
     forum:
       path: /forum/**
-      serviceId: bbs-forum
+    serviceId: bbs-forum
 #    bbs-post:
 #      path: /post/**
 #      serviceId: bbs-post
