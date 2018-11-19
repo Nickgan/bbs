@@ -1,7 +1,10 @@
 package com.exchange.bbs.log.service;
 
 import com.exchange.bbs.entity.bbslog.BbsLog;
-import com.exchange.bbs.log.vo.BbsLogListReq; /**
+import com.exchange.bbs.log.vo.BbsLogListReq;
+import org.springframework.data.domain.Page;
+
+/**
  * bbs日志
  *
  * @author gan
@@ -11,5 +14,5 @@ public interface BbsLogService {
 
     void add(BbsLog bbsLog);
 
-    void list(BbsLogListReq req);
+    Page<BbsLog> list(BbsLogListReq req);
 }

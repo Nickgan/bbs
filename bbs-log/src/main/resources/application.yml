@@ -17,3 +17,8 @@ spring:
       ddl-auto: update
     show-sql: true
 
+eureka:
+  client:  #客户端服务注册到eureka中
+    service-url:
+      defaultZone: http://eureka9001.com:9001/eureka/ #,http://eureka9002.com:9002/eureka/
+

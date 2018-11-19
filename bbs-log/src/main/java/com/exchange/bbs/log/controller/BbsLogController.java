@@ -6,10 +6,8 @@ import com.exchange.bbs.entity.bbslog.BbsLog;
 import com.exchange.bbs.log.service.BbsLogService;
 import com.exchange.bbs.log.vo.BbsLogListReq;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * bbs日志
@@ -25,7 +23,7 @@ public class BbsLogController extends BaseController {
     @Autowired
     private BbsLogService bbsLogService;
 
-    @PutMapping
+    @PostMapping
     public BaseResult add(BbsLog bbsLog) {
         bbsLogService.add(bbsLog);
         return BaseResult.success();
@@ -33,7 +31,7 @@ public class BbsLogController extends BaseController {
 
     @GetMapping("/list")
     public Object list(BbsLogListReq req) {
-        bbsLogService.list(req);
-        return BaseResult.success();
+        Page<BbsLog> pageList = bbsLogService.list(req);
+        return BaseResult.success(pageList);
     }
 }

@@ -58,7 +58,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         long total = (Long) (countQry.getSingleResult());
 
         List<T> result;
-        if (total > pageable.getOffset()) {
+        if (total > 0) {
             StringBuilder qryS = new StringBuilder();
             qryS.append(SQL_LIST);
             qryS.append(hql);
@@ -69,10 +69,10 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
                     qryS.append(order.getDirection().toString() + " ");
                 }
             }
+            System.out.println("hql======>" + qryS.toString());
             Query query = entityManager.createQuery(qryS.toString(), domainClass);
             prepareQueryParam(query, params);
-            Long offset = pageable.getOffset();
-            query.setFirstResult(offset.intValue());
+            query.setFirstResult(pageable.getPageNumber());
             query.setMaxResults(pageable.getPageSize());
             result = query.getResultList();
         } else {

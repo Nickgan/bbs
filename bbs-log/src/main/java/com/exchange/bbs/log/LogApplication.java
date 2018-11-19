@@ -10,8 +10,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
  * @author gan
  * @date 2018/10/24 下午9:39
  */
-
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.exchange.bbs.*")
 @EntityScan("com.exchange.bbs.entity.bbslog")
 public class LogApplication {
 

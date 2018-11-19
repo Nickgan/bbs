@@ -7,6 +7,7 @@ import com.exchange.bbs.log.vo.BbsLogListReq;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -35,13 +36,13 @@ public class BbsLogServiceImpl implements BbsLogService {
     }
 
     @Override
-    public void list(BbsLogListReq req) {
-        Sort sort = new Sort(Sort.Direction.ASC, "id", "createTime");
+    public Page<BbsLog> list(BbsLogListReq req) {
+        Sort sort = new Sort(Sort.Direction.ASC, "createTime");
         Pageable pageable = new PageRequest(req.getCurrentPage(), req.getPageSize(), sort);
         List<Object> params = new ArrayList<>();
         String hql = "FROM BbsLog o ";
         boolean firstCondition = true;
-        if (StringUtils.isBlank(req.getUsername())) {
+        if (StringUtils.isNotBlank(req.getUsername())) {
             hql.concat("WHERE o.username like ?1 ");
             params.add("%" + req.getUsername() + "%");
             firstCondition = false;
@@ -55,6 +56,7 @@ public class BbsLogServiceImpl implements BbsLogService {
                 hql.concat("AND o.bbsLogType = ?2");
             }
         }
-        bbsLogRepository.getResultPageByQuery(hql, pageable, params);
+        Page<BbsLog> page = bbsLogRepository.getResultPageByQuery(hql, pageable, params);
+        return page;
     }
 }
