@@ -1,6 +1,7 @@
 package com.exchange.bbs.log.service;
 
-/**
+import com.exchange.bbs.entity.bbslog.BbsLog;
+import com.exchange.bbs.log.vo.BbsLogListReq; /**
  * bbs日志
  *
  * @author gan
@@ -8,4 +9,7 @@ package com.exchange.bbs.log.service;
  */
 public interface BbsLogService {
 
+    void add(BbsLog bbsLog);
+
+    void list(BbsLogListReq req);
 }
