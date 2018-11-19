@@ -4,6 +4,7 @@ import com.exchange.bbs.entity.bbslog.BbsLog;
 import com.exchange.bbs.log.repository.BbsLogRepository;
 import com.exchange.bbs.log.service.BbsLogService;
 import com.exchange.bbs.log.vo.BbsLogListReq;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.data.domain.PageRequest;
@@ -38,7 +39,22 @@ public class BbsLogServiceImpl implements BbsLogService {
         Sort sort = new Sort(Sort.Direction.ASC, "id", "createTime");
         Pageable pageable = new PageRequest(req.getCurrentPage(), req.getPageSize(), sort);
         List<Object> params = new ArrayList<>();
-        String hql = "FROM BbsLog o where";
+        String hql = "FROM BbsLog o ";
+        boolean firstCondition = true;
+        if (StringUtils.isBlank(req.getUsername())) {
+            hql.concat("WHERE o.username like ?1 ");
+            params.add("%" + req.getUsername() + "%");
+            firstCondition = false;
+        }
+        if (req.getBbsLogType() != null) {
+            if (firstCondition) {
+                hql.concat("WHERE o.bbsLogType = ?2 ");
+                params.add(req.getBbsLogType());
+                firstCondition = false;
+            } else {
+                hql.concat("AND o.bbsLogType = ?2");
+            }
+        }
         bbsLogRepository.getResultPageByQuery(hql, pageable, params);
     }
 }

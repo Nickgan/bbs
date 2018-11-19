@@ -66,7 +66,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
                 qryS.append(SQL_ORDER);
                 for (Sort.Order order : pageable.getSort()) {
                     qryS.append(order.getProperty()).append(" ");
-                    qryS.append(order.getDirection().toString());
+                    qryS.append(order.getDirection().toString() + " ");
                 }
             }
             Query query = entityManager.createQuery(qryS.toString(), domainClass);
