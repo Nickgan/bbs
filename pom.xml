@@ -38,6 +38,7 @@
         <module>bbs-gateway</module>
         <module>bbs-sso</module>
         <module>bbs-eureka-server-second</module>
+        <module>common-sms</module>
     </modules>
 
     <dependencyManagement>

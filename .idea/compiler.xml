@@ -22,6 +22,7 @@
         <module name="bbs-sso" />
         <module name="bbs-user" />
         <module name="bbs-web" />
+        <module name="common-sms" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -44,6 +45,7 @@
       <module name="bbs-sso" target="1.8" />
       <module name="bbs-user" target="1.8" />
       <module name="bbs-web" target="1.8" />
+      <module name="common-sms" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
