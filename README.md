@@ -38,3 +38,5 @@ bbs-sso:9081
 
 bbs-gateway:9091
 
+common-sms:10001
+

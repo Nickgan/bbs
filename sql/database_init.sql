@@ -24,3 +24,8 @@ CREATE database `bbs-reply` CHARACTER set UTF8;
 DROP DATABASE IF EXISTS `bbs-user`;
 CREATE database `bbs-user` CHARACTER set UTF8;
 
+DROP DATABASE IF EXISTS `common-sms`;
+CREATE database `common-sms` CHARACTER set UTF8;
+
+
+
