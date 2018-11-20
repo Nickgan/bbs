@@ -38,13 +38,14 @@ public class StringUtil extends StringUtils {
     }
 
     /**
-     * 按照时间生成编号(大安分局+当前时间)
+     * 生成4位数字验证码
      *
      * @return
      */
-    public static String generateTableCode() {
-        Date date = new Date();
-        return "DAFJ" + DateUtils.formateDateyyyyMMddHHmmss(date);
+    public static String get4RandomNumber() {
+        Integer code = (int)((Math.random() * (9999 - 1000 + 1)) + 1000);
+        return code.toString();
     }
+
 
 }

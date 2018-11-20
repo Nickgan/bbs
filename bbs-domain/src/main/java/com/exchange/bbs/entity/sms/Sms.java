@@ -1,6 +1,7 @@
 package com.exchange.bbs.entity.sms;
 
 import com.exchange.bbs.entity.BaseEntity;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -15,12 +16,13 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "common_sms")
 @Data
+@Builder
 public class Sms extends BaseEntity {
 
     private String mobile;      //手机号
-    private String message;     //短信内容
     private String source;      //来源(一般是系统名称)
     private String ip;          //ip地址
     private String signName;    //短信签名
+    private String params;      //短信参数
 
 }

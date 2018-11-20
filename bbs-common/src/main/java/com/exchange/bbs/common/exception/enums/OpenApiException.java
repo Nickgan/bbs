@@ -25,11 +25,20 @@ public enum OpenApiException {
     /**
      * ===============版块和版块分类=====
      */
-    FORUM_CATEGORY_NOT_FOUNT("10002", "版块分类不存在"),
-    FORUM_CATEGORY_ALREADY_EXIST("10003", "版块分类已经存在"),
-    FORUM_ALREADY_EXIST("10004", "版块已经存在"),
-    FORUM__NOT_FOUNT("10003", "版块不存在"),
-    ;
+    FORUM_CATEGORY_NOT_FOUNT("1002", "版块分类不存在"),
+    FORUM_CATEGORY_ALREADY_EXIST("1003", "版块分类已经存在"),
+    FORUM_ALREADY_EXIST("1004", "版块已经存在"),
+    FORUM__NOT_FOUNT("1003", "版块不存在"),
+
+    /**
+     * ===============公共短信模块=====
+     */
+    SMS_NO_USER_CODE("2001", "无可用验证码"),
+    SMS_CODE_TIMEOUT("2002", "验证码失效,需要重新再获取验证码"),
+    SMS_CODE_ERROR("2003", "验证码错误"),
+    SMS_CODE_TIME_SORT("2004", "发送过于频繁，请稍后发送"),
+    SMS_CODE_OUT_LIMIT("2005", "发送次数超过当天最大限制次数"),
+    SMS_SEND_ERROR("2006", "短信发送失败,请稍后再试"),;
 
     private String code;
     private String message;
