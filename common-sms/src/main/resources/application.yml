@@ -1,17 +1,23 @@
 
 
 server:
-  port: 9041
+  port: 10001
 
 spring:
   application:
-    name: bbs-notice
+    name: common-sms
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bbs-notice?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/common-sms?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
     username: root
     password: root
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+
+eureka:
+  client:  #客户端服务注册到eureka中
+    service-url:
+      defaultZone: http://eureka9001.com:9001/eureka/ #,http://eureka9002.com:9002/eureka/
