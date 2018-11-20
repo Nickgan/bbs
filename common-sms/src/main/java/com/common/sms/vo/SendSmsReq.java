@@ -2,6 +2,8 @@ package com.common.sms.vo;
 
 import lombok.Data;
 
+import java.util.Map;
+
 /**
  * 短信发送请求对象
  *
@@ -14,13 +16,19 @@ public class SendSmsReq {
     //手机
     private String mobile;
 
-    //验证码
-    private String code;
+    //参数
+    private Map<String, Object> params;
 
     private String ip;
 
-    ////发送来源（一般是系统名称）
+    //发送来源（一般是系统名称）
     private String source;
+
+    //短信签名
+    private String signName = "bruce的网站公共短信服务平台";
+
+    //短信验证码模板
+    private String templateCode;
 
     //是否需要同步发送到钉钉消息群，测试时用
     private boolean syncSendDingDing = false;

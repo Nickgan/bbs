@@ -21,3 +21,9 @@ eureka:
   client:  #客户端服务注册到eureka中
     service-url:
       defaultZone: http://eureka9001.com:9001/eureka/ #,http://eureka9002.com:9002/eureka/
+
+
+#阿里云短信配置
+aliyunsms:
+  accesskey: LTAIyAJHbscmRyZV
+  secretKey: Vw6hkwelizbRwZFuonHNThE5xyqG93
