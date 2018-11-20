@@ -18,9 +18,7 @@ import javax.persistence.Table;
 public class Sms extends BaseEntity {
 
     private String phone;       //手机号
-
-    private String content;     //短信内容
-
+    private String message;     //短信内容
     private String source;      //来源(一般是系统名称)
 
 }

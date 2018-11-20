@@ -4,6 +4,7 @@ import com.common.sms.vo.SendSmsReq;
 import com.exchange.bbs.common.annotation.ParamValidate;
 import com.exchange.bbs.common.controller.BaseController;
 import com.exchange.bbs.common.dto.BaseResult;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,6 +23,7 @@ public class SmsController extends BaseController {
     /**
      * 发送短信
      */
+    @ApiOperation(value = "发送短信", notes = "发送短信接口")
     @GetMapping("/send")
     public BaseResult sendSms(@ParamValidate SendSmsReq req) {
 
