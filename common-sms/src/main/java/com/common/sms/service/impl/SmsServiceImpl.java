@@ -63,6 +63,7 @@ public class SmsServiceImpl implements SmsService {
         try {
             aliYunSmsHelper.sendRegisterSms(req);
         } catch (ClientException e) {
+            e.printStackTrace();
             throw new BusinessException(OpenApiException.SMS_SEND_ERROR);
         }
 

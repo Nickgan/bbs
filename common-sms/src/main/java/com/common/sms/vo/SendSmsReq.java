@@ -25,7 +25,7 @@ public class SendSmsReq {
     private String source;
 
     //短信签名
-    private String signName = "bruce的网站公共短信服务平台";
+    private String signName = "【甘波】";
 
     //短信验证码模板
     private String templateCode;
