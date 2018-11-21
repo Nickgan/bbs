@@ -5,6 +5,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * 阿里云配置信息
+ *
  * @author gan
  * @date 2018/11/20 9:46 PM
  */
