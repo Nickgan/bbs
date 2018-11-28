@@ -1,4 +1,4 @@
-package com.common.sms.repository;
+package com.bbs.sms.repository;
 
 import com.exchange.bbs.entity.sms.Sms;
 import org.springframework.data.jpa.repository.JpaRepository;

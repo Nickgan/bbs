@@ -1,27 +1,23 @@
-package com.common.sms.service.impl;
+package com.bbs.sms.service.impl;
 
 import com.aliyuncs.exceptions.ClientException;
-import com.common.sms.config.AliyunSmsConfig;
-import com.common.sms.repository.SmsRepository;
-import com.common.sms.service.SmsService;
-import com.common.sms.utils.AliYunSmsHelper;
-import com.common.sms.vo.CheckCodeReq;
-import com.common.sms.vo.SendSmsReq;
+import com.bbs.sms.config.AliyunSmsConfig;
+import com.bbs.sms.repository.SmsRepository;
+import com.bbs.sms.service.SmsService;
+import com.bbs.sms.utils.AliYunSmsHelper;
+import com.bbs.sms.vo.CheckCodeReq;
+import com.bbs.sms.vo.SendSmsReq;
 import com.exchange.bbs.common.exception.BusinessException;
 import com.exchange.bbs.common.exception.enums.OpenApiException;
 import com.exchange.bbs.common.utils.DateUtils;
 import com.exchange.bbs.common.utils.JSonUtils;
-import com.exchange.bbs.common.utils.StringUtil;
 import com.exchange.bbs.entity.sms.Sms;
-import com.netflix.discovery.converters.Auto;
-import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
-import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;

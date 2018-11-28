@@ -1,8 +1,7 @@
 package com.exchange.bbs.common.utils;
 
-import org.apache.commons.lang.StringUtils;
+import org.springframework.util.StringUtils;
 
-import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -21,7 +20,7 @@ public class StringUtil extends StringUtils {
      */
     public static boolean stringsIsNotBlack(String... strs) {
         for (String str : strs) {
-            if (org.apache.commons.lang.StringUtils.isBlank(str)) {
+            if (StringUtils.isEmpty(str)) {
                 return false;
             }
         }

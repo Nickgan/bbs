@@ -1,4 +1,4 @@
-package com.common.sms.vo;
+package com.bbs.sms.vo;
 
 import lombok.Data;
 

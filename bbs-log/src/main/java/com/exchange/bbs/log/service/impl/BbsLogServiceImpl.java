@@ -4,17 +4,15 @@ import com.exchange.bbs.entity.bbslog.BbsLog;
 import com.exchange.bbs.log.repository.BbsLogRepository;
 import com.exchange.bbs.log.service.BbsLogService;
 import com.exchange.bbs.log.vo.BbsLogListReq;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.annotation.Order;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -42,7 +40,7 @@ public class BbsLogServiceImpl implements BbsLogService {
         List<Object> params = new ArrayList<>();
         String hql = "FROM BbsLog o ";
         boolean firstCondition = true;
-        if (StringUtils.isNotBlank(req.getUsername())) {
+        if (!StringUtils.isEmpty(req.getUsername())) {
             hql.concat("WHERE o.username like ?1 ");
             params.add("%" + req.getUsername() + "%");
             firstCondition = false;

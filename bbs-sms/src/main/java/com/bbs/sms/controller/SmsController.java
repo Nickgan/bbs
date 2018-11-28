@@ -1,7 +1,7 @@
-package com.common.sms.controller;
+package com.bbs.sms.controller;
 
-import com.common.sms.service.SmsService;
-import com.common.sms.vo.SendSmsReq;
+import com.bbs.sms.service.SmsService;
+import com.bbs.sms.vo.SendSmsReq;
 import com.exchange.bbs.common.annotation.ParamValidate;
 import com.exchange.bbs.common.controller.BaseController;
 import com.exchange.bbs.common.dto.BaseResult;

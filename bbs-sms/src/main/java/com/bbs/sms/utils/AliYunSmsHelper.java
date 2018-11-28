@@ -1,4 +1,4 @@
-package com.common.sms.utils;
+package com.bbs.sms.utils;
 
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.IAcsClient;
@@ -8,8 +8,8 @@ import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.http.MethodType;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
-import com.common.sms.config.AliyunSmsConfig;
-import com.common.sms.vo.SendSmsReq;
+import com.bbs.sms.config.AliyunSmsConfig;
+import com.bbs.sms.vo.SendSmsReq;
 import com.exchange.bbs.common.utils.JSonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

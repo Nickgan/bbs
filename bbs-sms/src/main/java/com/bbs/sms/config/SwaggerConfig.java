@@ -1,4 +1,4 @@
-package com.common.sms.config;
+package com.bbs.sms.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

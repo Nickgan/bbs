@@ -1,7 +1,7 @@
-package com.common.sms.service;
+package com.bbs.sms.service;
 
-import com.common.sms.vo.CheckCodeReq;
-import com.common.sms.vo.SendSmsReq;
+import com.bbs.sms.vo.SendSmsReq;
+import com.bbs.sms.vo.CheckCodeReq;
 
 /**
  * 公共短信服务

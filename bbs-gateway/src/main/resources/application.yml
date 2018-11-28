@@ -3,6 +3,11 @@
 server:
   port: 9091
 
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+
 spring:
   application:
     name: bbs-api-gateway     #服务名字
@@ -34,6 +39,3 @@ eureka:
     service-url:
       defaultZone: http://eureka9001.com:9001/eureka/ #,http://eureka9002.com:9002/eureka/
 
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
