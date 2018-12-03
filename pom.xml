@@ -40,6 +40,7 @@
         <module>bbs-eureka-server-second</module>
         <module>bbs-sms</module>
         <module>bbs-crawler</module>
+        <module>bbs-weixin</module>
     </modules>
 
     <dependencyManagement>
