@@ -1,7 +1,7 @@
 package com.exchange.bbs.forum.repository;
 
-import com.exchange.bbs.common.repository.BaseRepository;
-import com.exchange.bbs.entity.forum.ForumCategory;
+import com.exchange.bbs.core.repository.BaseRepository;
+import com.exchange.bbs.forum.entity.ForumCategory;
 
 /**
  * 版块分类

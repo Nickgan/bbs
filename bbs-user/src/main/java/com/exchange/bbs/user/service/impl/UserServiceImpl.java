@@ -1,6 +1,6 @@
 package com.exchange.bbs.user.service.impl;
 
-import com.exchange.bbs.entity.user.User;
+import com.exchange.bbs.user.entity.User;
 import com.exchange.bbs.user.repository.UserRepository;
 import com.exchange.bbs.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

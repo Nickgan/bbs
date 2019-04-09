@@ -1,6 +1,6 @@
 package com.exchange.bbs.notice.service;
 
-import com.exchange.bbs.entity.notice.Notice;
+import com.exchange.bbs.notice.entity.Notice;
 import com.exchange.bbs.notice.vo.AddNoticeReq;
 
 /**

@@ -1,6 +1,6 @@
 package com.exchange.bbs.user.repository;
 
-import com.exchange.bbs.entity.user.User;
+import com.exchange.bbs.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

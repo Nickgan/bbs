@@ -1,6 +1,6 @@
-package com.exchange.bbs.common.config;
+package com.exchange.bbs.core.config;
 
-import com.exchange.bbs.common.repository.BaseRepositoryFactoryBean;
+import com.exchange.bbs.core.repository.BaseRepositoryFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;

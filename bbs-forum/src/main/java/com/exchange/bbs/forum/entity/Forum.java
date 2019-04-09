@@ -1,6 +1,6 @@
-package com.exchange.bbs.entity.forum;
+package com.exchange.bbs.forum.entity;
 
-import com.exchange.bbs.entity.BaseEntity;
+import com.exchange.bbs.core.entity.BaseEntity;
 import lombok.Data;
 import lombok.experimental.Accessors;
 

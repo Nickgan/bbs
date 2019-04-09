@@ -3,13 +3,11 @@ package com.exchange.bbs.forum.controller;
 import com.exchange.bbs.common.annotation.ParamValidate;
 import com.exchange.bbs.common.controller.BaseController;
 import com.exchange.bbs.common.dto.BaseResult;
-import com.exchange.bbs.entity.forum.ForumCategory;
+import com.exchange.bbs.forum.entity.ForumCategory;
 import com.exchange.bbs.forum.service.ForumCategoryService;
 import com.exchange.bbs.forum.vo.AddForumCategoryReq;
 import com.exchange.bbs.forum.vo.UpdateForumCategoryReq;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

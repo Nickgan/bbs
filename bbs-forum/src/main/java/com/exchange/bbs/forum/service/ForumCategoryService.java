@@ -1,6 +1,6 @@
 package com.exchange.bbs.forum.service;
 
-import com.exchange.bbs.entity.forum.ForumCategory;
+import com.exchange.bbs.forum.entity.ForumCategory;
 import com.exchange.bbs.forum.vo.AddForumCategoryReq;
 import com.exchange.bbs.forum.vo.UpdateForumCategoryReq;
 

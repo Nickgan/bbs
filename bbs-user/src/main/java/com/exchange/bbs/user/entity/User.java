@@ -1,6 +1,5 @@
-package com.exchange.bbs.entity.user;
+package com.exchange.bbs.user.entity;
 
-import com.exchange.bbs.entity.BaseEntity;
 import com.exchange.bbs.enums.Gender;
 import com.exchange.bbs.enums.UserStatus;
 import lombok.Data;

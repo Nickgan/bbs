@@ -13,9 +13,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @date 2018/10/24 下午8:55
  */
 @SpringBootApplication(scanBasePackages = "com.exchange.bbs.*")
-@EntityScan("com.exchange.bbs.entity.forum")
-@EnableDiscoveryClient      //开启服务注册和发现
-@EnableFeignClients         //开启feign支持
+@EntityScan("com.exchange.bbs.forum.entity")
+//@EnableDiscoveryClient      //开启服务注册和发现
+//@EnableFeignClients         //开启feign支持
 public class ForumApplication {
 
     public static void main(String[] args) {

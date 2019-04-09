@@ -2,7 +2,6 @@ package com.exchange.bbs.common.exception;
 
 import com.exchange.bbs.common.exception.enums.OpenApiException;
 import lombok.Data;
-import org.apache.http.auth.BasicUserPrincipal;
 
 /**
  * 业务异常

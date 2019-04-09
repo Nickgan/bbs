@@ -2,7 +2,7 @@ package com.exchange.bbs.log.controller;
 
 import com.exchange.bbs.common.controller.BaseController;
 import com.exchange.bbs.common.dto.BaseResult;
-import com.exchange.bbs.entity.bbslog.BbsLog;
+import com.exchange.bbs.log.entity.BbsLog;
 import com.exchange.bbs.log.service.BbsLogService;
 import com.exchange.bbs.log.vo.BbsLogListReq;
 import org.springframework.beans.factory.annotation.Autowired;

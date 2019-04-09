@@ -1,8 +1,8 @@
 package com.exchange.bbs.log.repository;
 
-import com.exchange.bbs.common.repository.BaseRepository;
-import com.exchange.bbs.entity.bbslog.BbsLog;
-import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.exchange.bbs.core.repository.BaseRepository;
+import com.exchange.bbs.log.entity.BbsLog;
 
 /**
  * bbs日志

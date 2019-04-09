@@ -1,6 +1,7 @@
 package com.exchange.bbs.user.service;
 
-import com.exchange.bbs.entity.user.User;
+
+import com.exchange.bbs.user.entity.User;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.exchange.bbs.common.repository;
+package com.exchange.bbs.core.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

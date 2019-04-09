@@ -1,6 +1,6 @@
 package com.exchange.bbs.log.service;
 
-import com.exchange.bbs.entity.bbslog.BbsLog;
+import com.exchange.bbs.log.entity.BbsLog;
 import com.exchange.bbs.log.vo.BbsLogListReq;
 import org.springframework.data.domain.Page;
 

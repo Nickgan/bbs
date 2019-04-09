@@ -1,4 +1,4 @@
-package com.exchange.bbs.entity;
+package com.exchange.bbs.core.entity;
 
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;

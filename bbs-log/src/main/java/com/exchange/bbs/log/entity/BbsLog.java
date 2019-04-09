@@ -1,6 +1,6 @@
-package com.exchange.bbs.entity.bbslog;
+package com.exchange.bbs.log.entity;
 
-import com.exchange.bbs.entity.BaseEntity;
+import com.exchange.bbs.core.entity.BaseEntity;
 import com.exchange.bbs.enums.BbsLogType;
 import lombok.Data;
 import lombok.experimental.Accessors;

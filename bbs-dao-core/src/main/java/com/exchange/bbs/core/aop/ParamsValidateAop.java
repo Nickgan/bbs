@@ -1,4 +1,4 @@
-package com.exchange.bbs.common.aop;
+package com.exchange.bbs.core.aop;
 
 import com.exchange.bbs.common.annotation.ParamValidate;
 import com.exchange.bbs.common.exception.BusinessException;

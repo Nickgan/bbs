@@ -1,6 +1,6 @@
 package com.exchange.bbs.notice.repository;
 
-import com.exchange.bbs.entity.notice.Notice;
+import com.exchange.bbs.notice.entity.Notice;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
