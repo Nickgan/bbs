@@ -1,6 +1,6 @@
-package com.exchange.bbs.entity.admin;
+package com.exchange.bbs.admin.entity;
 
-import com.exchange.bbs.entity.BaseEntity;
+import com.exchange.bbs.core.entity.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Entity;

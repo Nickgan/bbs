@@ -1,6 +1,7 @@
 package com.exchange.bbs.reply.repository;
 
-import com.exchange.bbs.entity.reply.Reply;
+
+import com.exchange.bbs.reply.entity.Reply;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

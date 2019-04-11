@@ -10,7 +10,7 @@ import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
 import com.bbs.sms.config.AliyunSmsConfig;
 import com.bbs.sms.vo.SendSmsReq;
-import com.exchange.bbs.common.utils.JSonUtils;
+import com.exchange.bbs.common.utils.JSONUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -48,7 +48,7 @@ public class AliYunSmsHelper {
         request.setPhoneNumbers(req.getMobile());
         request.setSignName(req.getSignName());
         request.setTemplateCode(req.getTemplateCode());
-        request.setTemplateParam(JSonUtils.objectToJson(req.getParams()));
+        request.setTemplateParam(JSONUtils.objectToJson(req.getParams()));
         request.setOutId("yourOutId");
         SendSmsResponse sendSmsResponse = acsClient.getAcsResponse(request);
         if (sendSmsResponse.getCode() == null || !sendSmsResponse.getCode().equals("OK")) {

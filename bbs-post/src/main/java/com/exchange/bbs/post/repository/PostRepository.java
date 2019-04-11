@@ -1,6 +1,7 @@
 package com.exchange.bbs.post.repository;
 
-import com.exchange.bbs.entity.post.Post;
+
+import com.exchange.bbs.post.entity.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

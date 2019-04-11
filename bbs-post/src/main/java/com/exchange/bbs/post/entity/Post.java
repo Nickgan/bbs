@@ -1,7 +1,7 @@
-package com.exchange.bbs.entity.post;
+package com.exchange.bbs.post.entity;
 
-import com.exchange.bbs.entity.BaseEntity;
-import com.exchange.bbs.enums.PostStatus;
+import com.exchange.bbs.core.entity.BaseEntity;
+import com.exchange.bbs.post.enums.PostStatus;
 import lombok.Data;
 import lombok.experimental.Accessors;
 

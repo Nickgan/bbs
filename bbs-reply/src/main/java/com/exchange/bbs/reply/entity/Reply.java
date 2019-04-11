@@ -1,6 +1,6 @@
-package com.exchange.bbs.entity.reply;
+package com.exchange.bbs.reply.entity;
 
-import com.exchange.bbs.entity.BaseEntity;
+import com.exchange.bbs.core.entity.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Entity;

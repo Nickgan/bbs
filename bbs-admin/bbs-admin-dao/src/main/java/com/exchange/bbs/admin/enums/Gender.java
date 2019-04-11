@@ -1,4 +1,4 @@
-package com.exchange.bbs.enums;
+package com.exchange.bbs.admin.enums;
 
 /**
  * 性别

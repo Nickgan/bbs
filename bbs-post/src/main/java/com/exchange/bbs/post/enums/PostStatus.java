@@ -1,4 +1,4 @@
-package com.exchange.bbs.enums;
+package com.exchange.bbs.post.enums;
 
 /**
  * 帖子发布状态

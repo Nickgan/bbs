@@ -2,6 +2,7 @@ package com.bbs.sms.service.impl;
 
 import com.aliyuncs.exceptions.ClientException;
 import com.bbs.sms.config.AliyunSmsConfig;
+import com.bbs.sms.entity.Sms;
 import com.bbs.sms.repository.SmsRepository;
 import com.bbs.sms.service.SmsService;
 import com.bbs.sms.utils.AliYunSmsHelper;
@@ -10,10 +11,8 @@ import com.bbs.sms.vo.SendSmsReq;
 import com.exchange.bbs.common.exception.BusinessException;
 import com.exchange.bbs.common.exception.enums.OpenApiException;
 import com.exchange.bbs.common.utils.DateUtils;
-import com.exchange.bbs.common.utils.JSonUtils;
-import com.exchange.bbs.entity.sms.Sms;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.exchange.bbs.common.utils.JSONUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -29,8 +28,8 @@ import java.util.List;
  * @date 2018/11/20 12:41 PM
  */
 @Service
+@Slf4j
 public class SmsServiceImpl implements SmsService {
-    private Logger logger = LoggerFactory.getLogger(SmsServiceImpl.class);
 
     @Autowired
     private SmsRepository smsRepository;
@@ -64,7 +63,7 @@ public class SmsServiceImpl implements SmsService {
         }
 
         Sms sms = Sms.builder().mobile(req.getMobile()).source(req.getSource())
-                .ip(req.getIp()).signName(req.getSignName()).params(JSonUtils.objectToJson(req.getParams())).build();
+                .ip(req.getIp()).signName(req.getSignName()).params(JSONUtils.objectToJson(req.getParams())).build();
         smsRepository.save(sms);
 
     }
@@ -82,7 +81,7 @@ public class SmsServiceImpl implements SmsService {
         }
 
         //检验验证码的正确性(这里要求需要check的验证码sms参数params里面验证码字段key必须为code)
-        HashMap params = JSonUtils.jsonToPojo(sms.getParams(), HashMap.class);
+        HashMap params = JSONUtils.jsonToPojo(sms.getParams(), HashMap.class);
         if (!req.getMobile().equals(params.get("code"))) {
             throw new BusinessException(OpenApiException.SMS_CODE_ERROR);
         }

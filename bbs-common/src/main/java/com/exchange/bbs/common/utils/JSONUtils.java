@@ -10,7 +10,7 @@ import java.util.List;
  * JSON工具类
  * Created by gan on 2018/11/20 22:26.
  */
-public class JSonUtils {
+public class JSONUtils {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
 

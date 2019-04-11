@@ -1,7 +1,7 @@
 package com.exchange.bbs.admin.repository;
 
-import com.exchange.bbs.entity.admin.AdminRole;
-import com.exchange.bbs.entity.admin.AdminUser;
+
+import com.exchange.bbs.admin.entity.AdminRole;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -10,6 +10,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author gan
  * @date 2018/10/24 下午7:26
  */
-public interface AdminRoleRepository extends JpaRepository<AdminRole,String>{
+public interface AdminRoleRepository extends JpaRepository<AdminRole,String> {
 
 }

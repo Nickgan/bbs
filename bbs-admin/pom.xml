@@ -15,7 +15,6 @@
         <module>bbs-admin-web</module>
         <module>bbs-admin-service</module>
         <module>bbs-admin-dao</module>
-        <module>bbs-admin-entity</module>
     </modules>
 
 </project>

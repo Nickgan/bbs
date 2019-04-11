@@ -1,6 +1,6 @@
-package com.exchange.bbs.entity.sms;
+package com.bbs.sms.entity;
 
-import com.exchange.bbs.entity.BaseEntity;
+import com.exchange.bbs.core.entity.BaseEntity;
 import lombok.Builder;
 import lombok.Data;
 

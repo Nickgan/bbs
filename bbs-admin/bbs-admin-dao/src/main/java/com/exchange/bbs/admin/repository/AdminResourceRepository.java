@@ -1,7 +1,7 @@
 package com.exchange.bbs.admin.repository;
 
-import com.exchange.bbs.entity.admin.AdminResource;
-import com.exchange.bbs.entity.admin.AdminRole;
+
+import com.exchange.bbs.admin.entity.AdminResource;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
