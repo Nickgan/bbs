@@ -4,6 +4,7 @@ import com.exchange.bbs.common.annotation.ParamValidate;
 import com.exchange.bbs.common.controller.BaseController;
 import com.exchange.bbs.common.dto.BaseResult;
 import com.exchange.bbs.common.query.BaseQuery;
+import com.exchange.bbs.common.utils.BasePage;
 import com.exchange.bbs.post.service.PostService;
 import com.exchange.bbs.post.vo.AddPostReq;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,7 @@ public class PostController extends BaseController {
     }
 
     @GetMapping("/list")
-    public BaseResult list(BaseQuery query) {
+    public BaseResult list(BasePage basePage) {
 
         return BaseResult.success();
     }
