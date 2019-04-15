@@ -51,6 +51,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         }
     }
 
+    @Override
     public Page<T> getResultPageByQuery(String hql, Pageable pageable, List<Object> params) {
         String countQryS = SQL_COUNT + hql;
         Query countQry = entityManager.createQuery(countQryS);
@@ -81,6 +82,7 @@ public class BaseRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRep
         return new PageImpl<T>(result, pageable, total);
     }
 
+    @Override
     public List<T> findByHql(String hql, List<Object> params) {
         Query query = entityManager.createQuery(hql, domainClass);
         prepareQueryParam(query, params);
