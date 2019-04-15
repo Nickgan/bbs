@@ -12,8 +12,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @date 2018/10/24 下午8:43
  */
 
-@SpringBootApplication
-@EntityScan("com.exchange.bbs.entity.post")
+@SpringBootApplication(scanBasePackages = "com.exchange.bbs.*")
+@EntityScan("com.exchange.bbs.post.entity")
 @EnableFeignClients
 public class PostApplication {
 
