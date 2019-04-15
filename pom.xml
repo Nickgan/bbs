@@ -41,6 +41,7 @@
         <module>bbs-crawler</module>
         <module>bbs-weixin</module>
         <module>bbs-dao-core</module>
+        <module>bbs-dataImport</module>
     </modules>
 
     <dependencyManagement>
