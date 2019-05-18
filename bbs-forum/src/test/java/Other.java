@@ -1,31 +1,72 @@
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+
+import lombok.extern.slf4j.Slf4j;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * Created by gan on 2019/4/22 21:51.
+ * Created by ganbo on 2019/4/2.
  */
+@Slf4j
 public class Other {
-
 
     public static void main(String[] args) {
 
-        ExecutorService service = Executors.newFixedThreadPool(10); //创建固定线程数目的线程池
-        for (int i = 0; i < 20; i++) {
-            service.execute(new Runnable() {
-                @Override
-                public void run() {
-                    for (int j = 0; j < 2; j++) {
-                        try {
-                            Thread.sleep(2000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        System.out.println(Thread.currentThread().getName() + "=================================>" + j);
-                    }
-                }
-            });
+
+        final CompareAndSwap cas = new CompareAndSwap();
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                int expect = cas.get();
+                int setValue = (int) (Math.random() * 100);
+                boolean setResult = cas.setNewValue(expect, setValue);
+                //System.out.println("expectValue===>" + expect + "  setValue===>" + setValue + " setResult===>" + setResult);
+            }).start();
         }
 
-        System.out.println("==============================end=====");
+    }
+
+
+}
+
+//模拟java底层cas算法实现AtomicInteger类
+class CompareAndSwap {
+
+    private int value;  //具体值
+
+    //获取旧值
+    public synchronized int get() {
+        return value;
+    }
+
+
+    /**
+     * 比较和替换,返回旧值(为了保证原子性,该方法必须加锁)
+     *
+     * @param expectValue 期望值
+     * @param newValue    新值
+     * @return 返回旧值
+     */
+    public synchronized int compareAndSwap(int expectValue, int newValue) {
+        int oldValue = get();   //旧值
+        if (oldValue == expectValue) {
+            value = newValue;
+        }
+        System.out.println("==============expectValue===>" + expectValue + "  setValue===>" + oldValue + " setResult===>" + ((oldValue == expectValue)));
+        return oldValue;
+    }
+
+    /**
+     * 设置值
+     *
+     * @param expect
+     * @param newValue
+     * @return 返回是否成功
+     */
+    public synchronized boolean setNewValue(int expect, int newValue) {
+        boolean b = expect == compareAndSwap(expect, newValue);
+        return b;
     }
 }
+
